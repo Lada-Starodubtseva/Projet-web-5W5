@@ -131,3 +131,24 @@ p.lorem {
     transform: rotate(45deg) translate(20px, 20px);
   }
 }
+
+
+/**********************************/
+/* ************histoire************ */
+/**********************************/
+
+section.description{
+  margin-top: 30vh;
+  justify-content: center;
+  display: flex;
+}
+section.description p {
+  color: #C4E7D4;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  margin: 8%;
+  width: 1200px;
+  text-align: justify;
+  padding-top: 10vh;
+
+}
