@@ -52,7 +52,7 @@ div.texte-arrow {
 }
 
 div.titre {
-  margin-left: -7vw;
+  margin-left: -9vw;
 }
 
 
@@ -68,7 +68,7 @@ div.titre p {
   font-weight: bolder;
   font-size: 50px;
   margin: -11vw;
-  margin-top: 11vh;
+  margin-top: 9vh;
 
 }
 
@@ -85,8 +85,8 @@ p.lorem {
 
 .arrow {
   position: absolute;
-  top: 44%;
-  left: 30%;
+  top: 43%;
+  left: 33%;
   transform: rotate(-90deg);
   cursor: pointer;
   
@@ -206,3 +206,8 @@ section.description p {
 }
 
 
+
+
+/**********************************/
+/* ************décos************ */
+/**********************************/
