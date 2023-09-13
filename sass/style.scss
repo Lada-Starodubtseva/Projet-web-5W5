@@ -1,0 +1,27 @@
+/*
+Theme Name: 5w5-projet-web
+Theme URI: https://referenced.ca
+Author: Audrey Dénommée, Yehya Refaat, Lada Starodubtseva, Samuel-André Antenor
+Author URI: https://github.com/Lada-Starodubtseva/Projet-web-5W5.git
+Description: Projet web en équipe
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: 2023-5w4
+*/
+
+@import "variables/dimension";
+@import "variables/root";
+@import "normalize/normalize";
+//@import "normalize/box-sizing";
+
+/* --------------------------------------------- base */
+@import "base/body";
+@import "base/heading";
+@import "base/link";
+
+/* --------------------------------------------- composant */
+
+
+/* ----------------------------------------------- layout */
