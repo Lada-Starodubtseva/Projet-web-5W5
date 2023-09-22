@@ -12,6 +12,7 @@ add_action( 'wp_enqueue_scripts', 'ajouter_styles' );
 function enregistrement_nav_menu(){
     register_nav_menus( array(
         'principal' => 'Menu principal',
+        'cours' => 'Menu principal',
         'footer'  => 'Menu pied de page'
     ) );
 }
