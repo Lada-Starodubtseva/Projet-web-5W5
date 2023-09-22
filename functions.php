@@ -7,4 +7,14 @@ function ajouter_styles() {
                     );              
 }
 add_action( 'wp_enqueue_scripts', 'ajouter_styles' );
+
+/*--------------------------------- Enregistrement des menus */
+function enregistrement_nav_menu(){
+    register_nav_menus( array(
+        'principal' => 'Menu principal',
+        'footer'  => 'Menu pied de page',
+    ) );
+}
+add_action( 'after_setup_theme', 'enregistrement_nav_menu', 0 );
+
 ?>
