@@ -1,1 +1,3 @@
-# Projet-web-5W5
+# Hello world
+## Projet web en équipe
+### Auteur : Audrey Dénommée, Yehya Refaat, Lada Starodubtseva, Samuel-André Antenor
