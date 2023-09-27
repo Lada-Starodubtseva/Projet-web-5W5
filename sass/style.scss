@@ -1,3 +1,4 @@
+
 /*
 Theme Name: 5w5-projet-web
 Theme URI: https://referenced.ca
@@ -19,7 +20,9 @@ Text Domain: 2023-5w4
 /* --------------------------------------------- base */
 @import "base/main";
 @import "base/body";
+@import "base/header";
 @import "base/heading";
+
 
 /* --------------------------------------------- composant */
 @import "composant/footer";
