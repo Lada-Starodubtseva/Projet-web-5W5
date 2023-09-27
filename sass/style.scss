@@ -1,4 +1,4 @@
-/*
+
 Theme Name: 5w5-projet-web
 Theme URI: https://referenced.ca
 Author: Audrey Dénommée, Yehya Refaat, Lada Starodubtseva, Samuel-André Antenor
@@ -17,11 +17,14 @@ Text Domain: 2023-5w4
 //@import "normalize/box-sizing";
 
 /* --------------------------------------------- base */
-@import "base/body";
+@import "base/main";
 @import "base/heading";
-@import "base/link";
 
 /* --------------------------------------------- composant */
-
+@import "composant/footer";
 
 /* ----------------------------------------------- layout */
+
+/* ----------------------------------------------- template-parts */
+@import "template-parts/enseignants";
+
