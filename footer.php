@@ -1,3 +1,4 @@
+
 <footer class="site__footer"> 
     <div class="degrade">
         <div class="premier"></div>
@@ -32,4 +33,5 @@
 </footer>
 </body>
 </html>
+
 <?php wp_footer(); ?>

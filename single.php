@@ -1,3 +1,4 @@
+
 <?php get_header(); ?>
 <main class="single">
     <h3>single.php</h3>
@@ -12,4 +13,5 @@
     ?>
 
 </main>
+
 <?php get_footer(); ?>
