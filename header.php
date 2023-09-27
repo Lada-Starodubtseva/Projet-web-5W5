@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -17,7 +19,7 @@
 </head>
 <body class="site">
     <header class="site__header">
-    <img src="images/_LogoTIM_carr‚.png" alt="logo">
+<img src="images/_LogoTIM_carr‚.png" alt="logo">
         <div class="menu">
             <nav class="nav-menu">
                 <ul>
