@@ -1,3 +1,7 @@
+html {
+    background-color: #030027;
+}
+
 h1 {
     font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3rem);
 }
@@ -26,16 +30,18 @@ P {
     font-size: clamp(0.5rem, 0.125rem + 1.2vw, 0.8rem);
 }
 
-h1, h2, h3, h4 {
-    font-family: 'DM Serif Display', serif;
-    /* font-family: "Slackey", cursive; */
+h1, h2 {
+    font-family: 'Martian Mono', monospace;
 }
 
-h5,
-h6 {
-    font-family: 'DM Sans', sans-serif;
+h3, h4 {
+    font-family: 'Work Sans', sans-serif;
+}
+
+h5, h6 {
+    font-family: 'Work Sans', sans-serif;
 }
 
 p {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }

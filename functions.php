@@ -17,4 +17,17 @@ function enregistrement_nav_menu(){
     ) );
 }
 add_action( 'after_setup_theme', 'enregistrement_nav_menu', 0 );     
+
+function enregistrer_sidebar() {
+    register_sidebar( array(
+        'name' => __( 'Recherche', '5w5-projet-web' ),
+        'id' => 'recherche',
+        'description' => __( 'Une zone pour afficher des widgets dans le sidebar du footer.', '5w5-projet-web' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'enregistrer_sidebar' );
 ?>
