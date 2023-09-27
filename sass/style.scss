@@ -17,11 +17,10 @@ Text Domain: 2023-5w4
 //@import "normalize/box-sizing";
 
 /* --------------------------------------------- base */
-@import "base/body";
+@import "base/main";
 @import "base/heading";
-@import "base/link";
 
 /* --------------------------------------------- composant */
-
+@import "composant/footer";
 
 /* ----------------------------------------------- layout */
