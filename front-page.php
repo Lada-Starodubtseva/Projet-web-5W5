@@ -86,10 +86,8 @@
                     </div>
                 </div>
             </div>
-
-
         </section>
-
+        <?php get_template_part("templates-parts/futur"); ?>
     </body>
 
 </main>
