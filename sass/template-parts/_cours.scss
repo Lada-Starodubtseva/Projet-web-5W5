@@ -1,0 +1,100 @@
+@media screen and (min-width: 576px) {
+    .cours {
+        padding: 0rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 50vh;
+
+        .menu-cours-container {
+            
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                row-gap: 1rem;
+                flex-wrap: wrap;
+                list-style: none;
+                padding-left: 0;
+
+                li {
+
+                    padding: 0rem 0.5rem;
+
+                    a {
+                        color: #C4E7D4;
+                        text-decoration: none;
+                        font-family: 'Work Sans', sans-serif;
+                        font-weight: bold;
+
+                        padding: 0.3rem;
+                        border: 1px solid #030027;
+                        background-color: #030027;
+    
+                        transform: scale(1);
+                        transition: transform 0.3s;
+                    }
+
+                    a:hover {
+                        border: 1px solid #2274A5;
+                        background-color: #2274A5;
+                        color: #030027;
+                        scale: (1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .cours {
+        padding: 0rem 2rem;
+        width: 100vw;
+        height: 80vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    
+        .menu-cours-container {
+    
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                row-gap: 0.5rem;
+                flex-wrap: wrap;
+    
+                li {
+    
+                    padding: 0.5rem 0rem;
+    
+                    a {
+                        color: #C4E7D4;
+                        text-decoration: none;
+                        font-family: 'Work Sans', sans-serif;
+                        font-weight: bold;
+    
+                        padding: 0.3rem;
+                        border: 1px solid #030027;
+                        background-color: #030027;
+    
+                        transform: scale(1);
+                        transition: transform 0.3s;
+                    }
+    
+                    a:hover {
+                        border: 1px solid #2274A5;
+                        background-color: #2274A5;
+                        color: #030027;
+                        scale: (1.1);
+                    }
+                }
+            }
+        }
+    }
+}

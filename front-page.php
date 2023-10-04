@@ -42,9 +42,13 @@
                 tempore provident, tempora perferendis molestiae ut dicta excepturi odit. Ipsam earum animi omnis ducimus
                 possimus nobis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quisquam minima ab beatae
                 maxime facilis cum sunt, reiciendis autem quidem eius corrupti eos corporis esse numquam velit odio quo
-                harum!</p>
+                harum!
+            </p>
         </section>
 
+        <?php   
+            get_template_part("templates-parts/cours");
+        ?>
 
         <section class="carrousel-enseignants">
             <div id="background-deux"></div>
