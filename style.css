@@ -898,6 +898,7 @@ p {
   }
   .site__footer .infos .recherche #block-7 form .wp-block-search__inside-wrapper input {
     background-color: #030027;
+    border: none;
     color: #FFFFFF;
     font-family: "Work Sans", sans-serif;
     width: 7rem;
