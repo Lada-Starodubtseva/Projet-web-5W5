@@ -32,7 +32,7 @@
 
         </section>
 
-        <section class="description">
+        <section class="description" id="description">
             <h6>PROGRAMME</h6>
             <h2>La technique</h2>
             <div class="texte">
