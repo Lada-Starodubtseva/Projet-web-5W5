@@ -44,8 +44,7 @@
                 maxime facilis cum sunt, reiciendis autem quidem eius corrupti eos corporis esse numquam velit odio quo
                 harum!</p>
         </section>
-
-
+        
         <section class="carrousel-enseignants">
             <div id="background-deux"></div>
             <div class="one">
