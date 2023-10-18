@@ -90,8 +90,57 @@
 
         </section>
 
+
+        <section class="projets">
+
+            <p class="titre">Projets
+            <br> etudiants</p>
+        
+       
+            <div class="gridProjets">
+                <div class="projet item1">
+                    
+                </div>
+                <div class="projet item2">
+
+                </div>
+                <div class="projet item3">
+
+                </div>
+                <div class="projet item4">
+
+                </div>
+                <div class="projet item5">
+
+                </div>
+                <div class="projet item6">
+                    
+                </div>
+                <div class="projet item7">
+
+                </div>
+                <div class="projet item8">
+
+                </div>
+                <div class="projet item9">
+
+                </div>
+                <div class="projet item10">
+
+                </div>
+                <div class="projet item11">
+
+                </div>
+            </div>
+             
+
+        </section>
     </body>
 
+
+
+
 </main>
+
 
 <?php get_footer(); ?>
