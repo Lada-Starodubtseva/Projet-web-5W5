@@ -60,6 +60,7 @@
             get_template_part("templates-parts/cours");
         ?>
 
+        <!--
         <section class="carrousel-enseignants">
             <div id="background-deux"></div>
             <div class="one">
@@ -100,9 +101,12 @@
                     </div>
                 </div>
             </div>
-
-
         </section>
+        -->
+
+        <?php   
+            get_template_part("templates-parts/enseignants");
+        ?>
 
     </body>
 

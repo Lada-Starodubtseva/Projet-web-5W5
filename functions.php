@@ -33,4 +33,6 @@ function enregistrer_sidebar() {
 }
 add_action( 'widgets_init', 'enregistrer_sidebar' );
 
+add_theme_support( 'post-thumbnails' );
+
 ?>
