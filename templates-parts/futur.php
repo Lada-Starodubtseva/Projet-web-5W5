@@ -1,4 +1,4 @@
-<div class="ATE">
+<div class="futur1">
     <div class="animation-rectangle">
         <div class="rectangle-deco1"></div>
         <div class="rectangle-deco2"></div>
@@ -38,8 +38,8 @@
     </div>
 </div>
 
-<div class="Études">
-    <div class="animation-rectangle">
+<div class="futur2">
+    <div class="animation-rectangle2">
         <div class="rectangle-deco1"></div>
         <div class="rectangle-deco2"></div>
         <div class="rectangle-deco3"></div>
@@ -78,7 +78,7 @@
     </div>
 </div>
 
-<div class="Programmes">
+<div class="futur1">
     <div class="animation-rectangle">
         <div class="rectangle-deco1"></div>
         <div class="rectangle-deco2"></div>
@@ -115,8 +115,8 @@
     </div>
 </div>
 
-<div class="Entreprises">
-    <div class="animation-rectangle">
+<div class="futur2">
+    <div class="animation-rectangle2">
         <div class="rectangle-deco1"></div>
         <div class="rectangle-deco2"></div>
         <div class="rectangle-deco3"></div>
