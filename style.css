@@ -329,7 +329,6 @@ html {
 }
 
 body {
-  background-color: #030027;
   color: white;
   margin: 0;
 }
@@ -588,6 +587,7 @@ html {
 body {
   background-color: #030027;
   margin: 0;
+  overflow-x: hidden;
 }
 
 header {
