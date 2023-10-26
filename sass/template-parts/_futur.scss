@@ -1,5 +1,5 @@
 h1 {
-    font-size: 20px;
+    font-size: 25px;
     color: #C4E7D4;
     font-family: 'Work Sans', sans-serif;
 }
@@ -7,6 +7,11 @@ h1 {
 h6 {
     font-size: 15px;
     font-family: 'Work Sans', sans-serif;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 9px;
 }
 
 .futur1 {
@@ -14,15 +19,15 @@ h6 {
     flex-direction: column;
     justify-content: space-around;
     margin-top: 20px;
-    margin-bottom: 25vh;
+    margin-bottom: 10vh;
 }
 
 .futur2 {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     justify-content: space-around;
-    margin-top: 100px;
-    margin-bottom: 25vh;
+    margin-top: 50px;
+    margin-bottom: 5vh;
 }
 
 .info_ate, .info_programme {
@@ -30,39 +35,42 @@ h6 {
     flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
-    width: 60vw;
-    margin-left: 20vw;
+    width: 50vw;
+    margin-left: 25vw;
+    margin-top: 4rem;
 }
 
 .info_étude, .info_entreprise {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 30vw;
-    margin-right: 10vw; 
+    text-align: center;
+    width: 50vw;
+    margin-left: 25vw; 
 }
 
 .animation-rectangle {
     position: relative;
-    right: 15vw;
-    top: 20vw;
+    right: 25vw;
+    top: 10vh;
  }
 
  .animation-rectangle2 {
     position: absolute;
-    right: 20vw;
+    right: 10vw;
+    margin-bottom: 45vh;
  }
 
 .rectangle-deco1 {
-    height: 10rem;
-    width: 5rem;
+    height: 15rem;
+    width: 7.5rem;
     border: solid 2px #C4E7D4;
     position: absolute;
 }
 
 .rectangle-deco2 {
-    height: 10rem;
-    width: 5rem;
+    height: 15rem;
+    width: 7.5rem;
     border: solid 2px #C4E7D4;
     opacity: 80%;
     position: absolute;
@@ -71,8 +79,8 @@ h6 {
 }
 
 .rectangle-deco3 {
-    height: 10rem;
-    width: 5rem;
+    height: 15rem;
+    width: 7.5rem;
     border: solid 2px #C4E7D4;
     opacity: 60%;
     position: absolute;
@@ -81,8 +89,8 @@ h6 {
 }
 
 .rectangle-deco4 {
-    height: 10rem;
-    width: 5rem;
+    height: 15rem;
+    width: 7.5rem;
     border: solid 2px #C4E7D4;
     opacity: 40%;
     position: absolute;
@@ -91,8 +99,8 @@ h6 {
 }
 
 .rectangle-deco5 {
-    height: 10rem;
-    width: 5rem;
+    height: 15rem;
+    width: 7.5rem;
     border: solid 2px #C4E7D4;
     opacity: 20%;
     position: absolute;
@@ -119,40 +127,71 @@ h6 {
 
 .animation-cube {
     display: flex;
+    margin-top: 2rem;
+    margin-left: 2rem;
 }
 
 .cube-deco1 {
-    height: 3rem;
-    width: 3rem;
+    height: 5rem;
+    width: 5rem;
     border: solid 1px #2274A5;
 }
 
 .cube-deco2 {
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
     border: solid 1px #2274A5;
     margin-top: 10px;
 }
 
 .cube-deco3 {
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
     border: solid 1px #2274A5;
     margin-left: 10px;
 }
 
 .cube-deco4 {
-    height: 3rem;
-    width: 3rem;
+    height: 5rem;
+    width: 5rem;
     border: solid 1px #2274A5;
     margin-top: 10px;
     margin-left: 10px;
 }
 
+@media screen and (min-width:480) and (max-width:767px) {
+    .cube-deco1 {
+        height: 15rem;
+        width: 15rem;
+        border: solid 1px #2274A5;
+    }
+    
+    .cube-deco2 {
+        height: 7.5rem;
+        width: 7.5rem;
+        border: solid 1px #2274A5;
+        margin-top: 20px;
+    }
+    
+    .cube-deco3 {
+        height: 7.5rem;
+        width: 7.5rem;
+        border: solid 1px #2274A5;
+        margin-left: 20px;
+    }
+    
+    .cube-deco4 {
+        height: 15rem;
+        width: 15rem;
+        border: solid 1px #2274A5;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}
 
 @media screen and (min-width:768px) {
     h1, h6 {
-        margin: 10px 0 ;
+        margin: 10px 0;
     }
 
     p {
@@ -179,26 +218,30 @@ h6 {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        text-align: left;
         width: 40vw;
-        margin-left: 10vw;
+        margin-left: 11vw;
     }
 
     .info_étude, .info_entreprise {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        text-align: left;
         width: 40vw;
         margin-right: 10vw; 
+        margin-left: auto;
     }
 
     .animation-rectangle {
+       top: auto;
        position: absolute;
        right: 109vw;
     }
 
     .animation-rectangle2 {
         position: absolute;
-        right: 5vw;
+        right: 10vw;
     }
 
     .rectangle-deco1 {
@@ -261,6 +304,7 @@ h6 {
     
     .animation-cube {
         display: flex;
+        margin: auto;
     }
     
     .cube-deco1 {
