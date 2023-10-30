@@ -103,7 +103,7 @@
                                         <div id="projet1" class="projet" onclick="showText() , moveDiv()" >
                                     
                                             <h3 class="title">projet 1</h3>
-                                            <img src="" alt="">
+                                            <img src="img/_LogoTIM.png" alt="">
 
                                             <p id="projText" class="texteProjet">
                                                 Lorem, ipsum dolor sit 

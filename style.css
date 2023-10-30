@@ -563,6 +563,40 @@ div.cont-prof {
 
 
 
+/* *****projet************ */
+/* *****projet************ */
+/* *****projet************ */
+/* *****projet************ */
+/* *****projet************ */
+
+
+
+/* *****projet img************ */
+/* *****Images a changer pour chaque projet************ */
+
+#projet1 {
+  background-image: url(img/_LogoTIM.png);
+  background-size: cover;
+}
+#projet2 {
+  background-image: url(img/_LogoTIM.png);
+  background-size: cover;
+}
+#projet3 {
+  background-image: url(img/_LogoTIM.png);
+  background-size: cover;
+}
+#projet4 {
+  background-image: url(img/_LogoTIM.png);
+  background-size: cover;
+}
+#projet5 {
+  background-image: url(img/_LogoTIM.png);
+  background-size: cover;
+}
+
+
+/* *****project container and divs************ */
 
 div.cont-projet {
   display: grid;
@@ -583,29 +617,8 @@ div.cont-projet {
   left: 0px;
   box-shadow: 3px 2px 50px rgb(202, 245, 255);
   margin-bottom: -5vh;
-}
 
 
-.projet:hover {
-  transform: scale(105%);
-  /* transform: scale(111.5%); */
-  transition: 0.4s ease-out;
-}
-
-.projet:hover ~ .projet {
-  position: relative;
-  /* left: 50px; */
-  transition: 0.4s ease-out;
-}
-
-
-
-
-
-
-
-
-.projet {
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -615,7 +628,17 @@ div.cont-projet {
   user-select: none;
 }
 
-/* The actual projet */
+.projet:hover {
+  transform: scale(105%);
+  transition: 0.4s ease-out;
+}
+
+.projet:hover ~ .projet {
+  position: relative;
+  transition: 0.4s ease-out;
+}
+
+/* The actual projet (div) */
 .projet .texteProjet {
   visibility: hidden;
   width: 120px;
@@ -640,17 +663,6 @@ div.cont-projet {
 }
 
 
-/* projet arrow */
-/* .projet .texteProjet::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-} */
 
 /* Toggle this class - hide and show the projet */
 .projet .show {
