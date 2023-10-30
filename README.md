@@ -25,4 +25,14 @@
 * À remplir!!
 #### Date de fin du sprint : xx/xx/2023
 
+Extension #1
+* Permet d'afficher les cours
+* Auteur : Audrey Dénommée
+* Lien vers l'extension : https://github.com/OreoBambolii/5w5-Plugin-Cours
+
+Extension #2
+* Permet de créer un caroussel pour afficher les photos ainsi que les informations des enseignants
+* Auteur : Samuel-André Antenor
+* Lien vers l'extension : 
+
 ## Lien vers le site : https://gftnth00.mywhc.ca/tim04/
