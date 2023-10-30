@@ -14,7 +14,7 @@ add_action( 'wp_enqueue_scripts', 'ajouter_styles' );
 function enregistrement_nav_menu(){
     register_nav_menus( array(
         'principal' => 'Menu principal',
-        'cours' => 'Menu principal',
+        'cours' => 'Cours',
         'footer'  => 'Menu pied de page'
     ) );
 }
@@ -32,5 +32,7 @@ function enregistrer_sidebar() {
     ) );
 }
 add_action( 'widgets_init', 'enregistrer_sidebar' );
+
+add_theme_support( 'post-thumbnails' );
 
 ?>

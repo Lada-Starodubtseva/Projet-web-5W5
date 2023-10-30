@@ -24,11 +24,14 @@ Text Domain: 2023-5w4
 @import "base/heading";
 
 
+
 /* --------------------------------------------- composant */
 @import "composant/footer";
+@import "composant/description";
 
 /* ----------------------------------------------- layout */
 
 /* ----------------------------------------------- template-parts */
 @import "template-parts/enseignants";
+@import "template-parts/cours";
 
