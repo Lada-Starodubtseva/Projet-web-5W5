@@ -46,49 +46,9 @@
         </section>
 
 
-        <section class="carrousel-enseignants">
-            <div id="background-deux"></div>
-            <div class="one">
-                <div class="two">
-                    <div class="three">
-                        <div class="four">
-                            <div class="five">
-
-
-                                <div class="container">
-
-                                    <div class="cont-prof">
-                                        <div class="prof">
-                                            <h3 class="title">prof 1</h3>
-                                        </div>
-
-                                        <div class="prof">
-                                            <h3 class="title">prof 2</h3>
-                                        </div>
-
-                                        <div class="prof">
-                                            <h3 class="title">prof 3</h3>
-                                        </div>
-
-                                        <div class="prof">
-                                            <h3 class="title">prof 4</h3>
-                                        </div>
-
-                                        <div class="prof">
-                                            <h3 class="title">prof 5</h3>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </section>
+        
+        <?php get_template_part("templates-parts/enseignants");
+        ?>
 
     </body>
 
