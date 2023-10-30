@@ -691,104 +691,11 @@ div.cont-projet {
   top: 15px;
 }
 
-/**********************************/
-/* ************projets************ */
-/**********************************/
-/* .projets p.titre {
-  font-size: 20px;
-  justify-content: center;
-  display: flex;
-}
-
-.gridProjets {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
-}
-
-div.projet {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-}
-
-div.projet:hover {
-  transform: scale(1.05);
-  transition: 0.2s;
-}
-
-
-
-
-#projet{
-  position: absolute;
-  background-color: rgb(8, 12, 54);
-  width: 80vw;
-  height: 40vh;
-  z-index: 2;
-
-  margin-top: -5vh;
-  opacity: 0;
-}
-
-
-
-.projet-wrap{
-  position: absolute;
-  justify-content: center;
-  display: flex;
-  left: 25%;
-  right: 25%;
-  top: 255%;
-}
-
-.bouton-projet{
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.projet.content p{
-  color: white;
-  font-size: 16px;
-} */
-
 
 
 
 @media screen and (max-width: 450px) {
-  /* .item1 {
-    grid-column: 1/span 2;
-    grid-row: 1/span 2;
-  }
-  .item2 {
-    grid-column: 1/span 3;
-    grid-row: 7/span 15;
-  }
-  .item3 {
-    grid-row: 5/span 2;
-    grid-column: 4/span 4;
-  }
-  .item6 {
-    grid-column: 3/span 5;
-    grid-row: 1/span 2;
-  }
-  .item7 {
-    grid-column: 4/span 4;
-    grid-row: 3/span 2;
-  }
-  .item4 {
-    grid-column: 1/span 3;
-    grid-row: 3/span 4;
-  }
 
-  .item5 {
-    grid-row: 7/span 15;
-    grid-column: 4/span 4;
-  } */
   .degrade {
     width: 100vw;
     height: 5rem;
