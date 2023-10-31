@@ -3,31 +3,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0f004c;
+  background-color: #030027;
   padding: 20px 0;
   position: relative; // Added to have a point of reference for the absolute positioning of the buttons
   
   button {
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
+    .material-icons {
+      font-size: 80px;
+      color: #C4E7D4;
+      background-color: transparent;
+    }
     border: none;
     cursor: pointer;
     z-index: 10;
-    font-size: 24px;
-    padding: 10px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    margin: 50px;
     &:first-of-type {
       left: 0;
     }
     &:last-of-type {
       right: 0;
-    }
-    &:hover {
-      opacity: 0.8;
-    }
-    .material-symbols-rounded {
-      color: #333;
     }
   }
   
@@ -39,6 +37,7 @@
     overflow: hidden;
     margin: 0 50px; // Added margins to make room for the chevrons on the side
     
+    
     .images {
       flex-grow: 1;
       display: flex;
@@ -46,15 +45,29 @@
       .article {
         flex: 0 0 auto;
         width: calc(100% - 40px);
+        height: 800px; // Add a fixed height
         margin-right: 20px;
         padding: 20px;
-        background-color: #0f004c;
+        background-color: #030027;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        border: red 4px solid;
+        opacity: 0; // Initially hidden
+  
+        animation-name: fadeIn;
+        animation-duration: 1s; // One second
+        animation-delay: 0.3s; // 300ms delay
+        animation-fill-mode: forwards;
+      
+        @keyframes fadeIn {
+          to {
+            opacity: 1;
+          }
+        }
+       
         h4 {
-          font-size: 18px;
+          font-size: 40px;
           margin-bottom: 10px;
-          color: #ffffff;
+          padding-left: 50px;
+          color: #86e6b1;
         }
         p {
           font-size: 16px;
@@ -72,5 +85,12 @@
         }
       }
     }
+  }
+}
+.enseignants{
+  h1{
+    margin-left: 40px;
+    color: #86e6b1;
+
   }
 }

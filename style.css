@@ -999,32 +999,30 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0f004c;
+  background-color: #030027;
   padding: 20px 0;
   position: relative;
 }
 .section-profs button {
-  background-color: rgb(255, 255, 255);
+  background-color: transparent;
   border: none;
   cursor: pointer;
   z-index: 10;
-  font-size: 24px;
-  padding: 10px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  margin: 50px;
+}
+.section-profs button .material-icons {
+  font-size: 80px;
+  color: #C4E7D4;
+  background-color: transparent;
 }
 .section-profs button:first-of-type {
   left: 0;
 }
 .section-profs button:last-of-type {
   right: 0;
-}
-.section-profs button:hover {
-  opacity: 0.8;
-}
-.section-profs button .material-symbols-rounded {
-  color: #333;
 }
 .section-profs .carroussel {
   display: flex;
@@ -1042,16 +1040,27 @@ p {
 .section-profs .carroussel .images .article {
   flex: 0 0 auto;
   width: calc(100% - 40px);
+  height: 800px;
   margin-right: 20px;
   padding: 20px;
-  background-color: #0f004c;
+  background-color: #030027;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border: red 4px solid;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 .section-profs .carroussel .images .article h4 {
-  font-size: 18px;
+  font-size: 40px;
   margin-bottom: 10px;
-  color: #ffffff;
+  padding-left: 50px;
+  color: #86e6b1;
 }
 .section-profs .carroussel .images .article p {
   font-size: 16px;
@@ -1066,4 +1075,9 @@ p {
 }
 .section-profs .carroussel .images .article img.active {
   opacity: 1;
+}
+
+.enseignants h1 {
+  margin-left: 40px;
+  color: #86e6b1;
 }/*# sourceMappingURL=style.css.map */
