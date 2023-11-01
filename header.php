@@ -14,12 +14,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
     <?php wp_head(); ?>
     <title>Document</title>
 </head>
 <body class="site">
     <header class="site__header">
-<img src="images/_LogoTIM_carr‚.png" alt="logo">
+<img src="Medias/_LogoTIM_carre.png" alt="logo">
         <div class="menu">
             <nav class="nav-menu">
                 <ul>
