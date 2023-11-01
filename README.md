@@ -10,7 +10,7 @@
 * Début du header
 #### Date de fin du sprint : 27/09/2023
 
-### Sprint 2
+## Sprint 2
 * Début du dévelopement des sections du site web
   - Description
   - Cours (création d'un plugin pour afficher les cours)
@@ -21,16 +21,16 @@
 * Début des animations du background du site
 #### Date de fin du sprint : 01/11/2023
 
-### Sprint 3
-* À remplir!!
+## Sprint 3
+* Ajouter les modifications
 #### Date de fin du sprint : xx/xx/2023
 
-Extension #1
+### Extension #1
 * Permet d'afficher les cours
 * Auteur : Audrey Dénommée
 * Lien vers l'extension : https://github.com/OreoBambolii/5w5-Plugin-Cours
 
-Extension #2
+### Extension #2
 * Permet de créer un caroussel pour afficher les photos ainsi que les informations des enseignants
 * Auteur : Samuel-André Antenor
 * Lien vers l'extension : 
