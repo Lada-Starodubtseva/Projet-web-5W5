@@ -108,6 +108,10 @@
             get_template_part("templates-parts/enseignants");
         ?>
 
+        <?php 
+            get_template_part("templates-parts/futur");
+        ?>
+
     </body>
 
 </main>

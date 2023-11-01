@@ -1035,4 +1035,297 @@ p {
     justify-content: flex-start;
     align-items: flex-start;
   }
+}
+.futur h1 {
+  font-size: 25px;
+  color: #C4E7D4;
+  font-family: "Work Sans", sans-serif;
+}
+.futur h6 {
+  font-size: 15px;
+  font-family: "Work Sans", sans-serif;
+  margin: 0 auto;
+}
+.futur p {
+  font-size: 9px;
+}
+.futur .futur1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 10vh;
+}
+.futur .futur2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 5vh;
+}
+.futur .info_ate, .futur .info_programme {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  width: 50vw;
+  margin-left: 25vw;
+  margin-top: 4rem;
+}
+.futur .info_étude, .futur .info_entreprise {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  width: 50vw;
+  margin-left: 25vw;
+}
+.futur .animation-rectangle {
+  position: relative;
+  right: 25vw;
+  top: 10vh;
+}
+.futur .animation-rectangle2 {
+  position: absolute;
+  right: 10vw;
+  margin-bottom: 45vh;
+}
+.futur .rectangle-deco1 {
+  height: 15rem;
+  width: 7.5rem;
+  border: solid 2px #C4E7D4;
+  position: absolute;
+}
+.futur .rectangle-deco2 {
+  height: 15rem;
+  width: 7.5rem;
+  border: solid 2px #C4E7D4;
+  opacity: 80%;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.futur .rectangle-deco3 {
+  height: 15rem;
+  width: 7.5rem;
+  border: solid 2px #C4E7D4;
+  opacity: 60%;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.futur .rectangle-deco4 {
+  height: 15rem;
+  width: 7.5rem;
+  border: solid 2px #C4E7D4;
+  opacity: 40%;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.futur .rectangle-deco5 {
+  height: 15rem;
+  width: 7.5rem;
+  border: solid 2px #C4E7D4;
+  opacity: 20%;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.futur .animation-cube {
+  display: flex;
+  justify-content: center;
+  top: 20px;
+}
+.futur .cube1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.futur .cube2 {
+  display: flex;
+  flex-direction: column;
+}
+.futur .animation-cube {
+  display: flex;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.futur .cube-deco1 {
+  height: 5rem;
+  width: 5rem;
+  border: solid 1px #2274A5;
+}
+.futur .cube-deco2 {
+  height: 2.5rem;
+  width: 2.5rem;
+  border: solid 1px #2274A5;
+  margin-top: 10px;
+}
+.futur .cube-deco3 {
+  height: 2.5rem;
+  width: 2.5rem;
+  border: solid 1px #2274A5;
+  margin-left: 10px;
+}
+.futur .cube-deco4 {
+  height: 5rem;
+  width: 5rem;
+  border: solid 1px #2274A5;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 480) and (max-width: 767px) {
+  .futur .cube-deco1 {
+    height: 15rem;
+    width: 15rem;
+    border: solid 1px #2274A5;
+  }
+  .futur .cube-deco2 {
+    height: 7.5rem;
+    width: 7.5rem;
+    border: solid 1px #2274A5;
+    margin-top: 20px;
+  }
+  .futur .cube-deco3 {
+    height: 7.5rem;
+    width: 7.5rem;
+    border: solid 1px #2274A5;
+    margin-left: 20px;
+  }
+  .futur .cube-deco4 {
+    height: 15rem;
+    width: 15rem;
+    border: solid 1px #2274A5;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .futur h1, .futur h6 {
+    margin: 10px 0;
+  }
+  .futur p {
+    font-size: 24px;
+  }
+  .futur .futur1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 25vh;
+  }
+  .futur .futur2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 25vh;
+  }
+  .futur .info_ate, .futur .info_programme {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: left;
+    width: 40vw;
+    margin-left: 11vw;
+  }
+  .futur .info_étude, .futur .info_entreprise {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: left;
+    width: 40vw;
+    margin-right: 10vw;
+    margin-left: auto;
+  }
+  .futur .animation-rectangle {
+    top: auto;
+    position: absolute;
+    right: 109vw;
+  }
+  .futur .animation-rectangle2 {
+    position: absolute;
+    right: 10vw;
+  }
+  .futur .rectangle-deco1 {
+    height: 40rem;
+    width: 20rem;
+    border: solid 5px #C4E7D4;
+    position: absolute;
+  }
+  .futur .rectangle-deco2 {
+    height: 40rem;
+    width: 20rem;
+    border: solid 5px #C4E7D4;
+    opacity: 80%;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .futur .rectangle-deco3 {
+    height: 40rem;
+    width: 20rem;
+    border: solid 5px #C4E7D4;
+    opacity: 60%;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .futur .rectangle-deco4 {
+    height: 40rem;
+    width: 20rem;
+    border: solid 5px #C4E7D4;
+    opacity: 40%;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .futur .rectangle-deco5 {
+    height: 40rem;
+    width: 20rem;
+    border: solid 5px #C4E7D4;
+    opacity: 20%;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+  .futur .cube1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .futur .cube2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .futur .animation-cube {
+    display: flex;
+    margin: auto;
+  }
+  .futur .cube-deco1 {
+    height: 25rem;
+    width: 25rem;
+    border: solid 1px #2274A5;
+  }
+  .futur .cube-deco2 {
+    height: 12.5rem;
+    width: 12.5rem;
+    border: solid 1px #2274A5;
+    margin-top: 20px;
+  }
+  .futur .cube-deco3 {
+    height: 12.5rem;
+    width: 12.5rem;
+    border: solid 1px #2274A5;
+    margin-left: 20px;
+  }
+  .futur .cube-deco4 {
+    height: 25rem;
+    width: 25rem;
+    border: solid 1px #2274A5;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
