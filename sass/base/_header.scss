@@ -1,3 +1,158 @@
+
+/**********************************/
+/* ************accueil************ */
+/**********************************/
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 80px;
+    padding: 10px;
+}
+
+div.menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+}
+
+nav.nav-menu {
+    display: flex;
+}
+
+nav.nav-menu ul {
+    display: flex;
+}
+
+nav.nav-menu ul li {
+    list-style-type: none;
+    color: #C4E7D4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    width: auto;
+}
+
+nav.nav-menu ul li::before,
+nav.nav-menu ul li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+nav.nav-menu ul li::before {
+    background-color: #54b3d6;
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+nav.nav-menu ul li::after {
+    content: attr(data-replace);
+    height: 100%;
+    top: 0;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+    color: #54b3d6;
+}
+
+nav.nav-menu ul li:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+}
+
+nav.nav-menu ul li:hover::after {
+    transform: translate3d(0, 0, 0);
+}
+
+nav.nav-menu ul li span {
+    display: inline-block;
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+nav.nav-menu ul li:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+nav.nav-menu ul li:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+}
+
+/* For search box */
+.searchBox {
+    position: relative;
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    flex-shrink: 0;
+}
+
+.searchBox:hover>.searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.searchBox:hover>.searchButton {
+    background: white;
+    color: #2f3640;
+}
+
+.searchButton {
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    border: rgb(255, 254, 254) 4px solid;
+}
+
+.searchInput {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+.menu:hover .nav-menu {
+    margin-left: 240px;
+    /* Push the nav to the left */
+}
+
+div.main-accueil {
+    height: 50vh;
+    width: 60vw;
+    border: solid 1px #C4E7D4;
+    margin-left: 30vw;
+    margin-top: 10vh;
+    display: flex;
+}
+=======
 /**********************************/
 /* ************accueil************ */
 /**********************************/
@@ -156,3 +311,4 @@ div.main-accueil {
     margin-top: 10vh;
     display: flex;
 }
+

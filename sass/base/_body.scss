@@ -40,6 +40,7 @@ html{
     font-size: 15px;
     margin: 3%;
   }
+
   
   div.main-accueil {
     height: 50vh;
@@ -214,15 +215,15 @@ html{
   .container {
     height: 500px;
     display: flex;
-    background-color: #C4E7D4;
+    background-color: rgb(196 231 212 );
   }
   
   div.cont-prof{
     display: grid;
-      justify-content: center;
-      background-color: #C4E7D4;
-      width: -webkit-fill-available;
-      overflow: scroll;
+    justify-content: center;
+    background-color: rgb(196 231 212 );
+    width: -webkit-fill-available;
+    overflow: scroll;
   }
   
   .prof {
@@ -266,6 +267,61 @@ html{
   
   
   /**********************************/
-  /* ************décos************ */
+  /* ************projets************ */
   /**********************************/
-  
+
+  .projets p.titre{
+    font-size: 40px;
+  }
+
+  .gridProjets{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+    
+ }
+ 
+ div.projet{
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+
+ }
+ 
+div.projet:hover{
+transform: scale(1.05);
+transition: 0.2s;
+
+}
+
+.item1{
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+ }
+ .item3{
+  grid-column: 4 / span 2;
+  grid-row: 5 / span 2;
+ }
+.item6{
+  grid-column: 3 / span 3;
+  grid-row: 1 / span 2;
+ }
+ .item7{
+  grid-column: 4 / span 2;
+  grid-row: 3 / span 2;
+ }
+ .item8{
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 4;
+ }
+ .item10{
+  grid-column: 2 / span 2;
+  grid-row: 3 / span 4;
+ }
+ .item10{
+  grid-row: 4 / span 5;
+ }
+ 
