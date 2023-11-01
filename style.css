@@ -1017,10 +1017,93 @@ p {
 }
 /* ----------------------------------------------- layout */
 /* ----------------------------------------------- template-parts */
-/*main {
-    color: red;
-    background-color: red;
-}*/
+.section-profs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #030027;
+  padding: 20px 0;
+  position: relative;
+}
+.section-profs button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 50px;
+}
+.section-profs button .material-icons {
+  font-size: 80px;
+  color: #C4E7D4;
+  background-color: transparent;
+}
+.section-profs button:first-of-type {
+  left: 0;
+}
+.section-profs button:last-of-type {
+  right: 0;
+}
+.section-profs .carroussel {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  overflow: hidden;
+  margin: 0 50px;
+}
+.section-profs .carroussel .images {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+.section-profs .carroussel .images .article {
+  flex: 0 0 auto;
+  width: calc(100% - 40px);
+  height: 800px;
+  margin-right: 20px;
+  padding: 20px;
+  background-color: #030027;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.section-profs .carroussel .images .article h4 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  padding-left: 50px;
+  color: #86e6b1;
+}
+.section-profs .carroussel .images .article p {
+  font-size: 16px;
+  color: #ffffff;
+}
+.section-profs .carroussel .images .article img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+.section-profs .carroussel .images .article img.active {
+  opacity: 1;
+}
+
+.enseignants h1 {
+  margin-left: 40px;
+  color: #86e6b1;
+}
+
 .cours {
   padding: 0rem 2rem 1rem 2rem;
   display: flex;
@@ -1330,11 +1413,21 @@ p {
   }
 }
 .projets p.titre {
-  font-size: 40px;
+  font-size: 20px;
+  justify-content: center;
+  display: flex;
 }
 
-div.projet {
-  background-color: rgba(255, 255, 255, 0.8);
+.gridProjets {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+div.display1 {
+  background-color: rgba(227, 28, 28, 0.8);
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
@@ -1345,36 +1438,203 @@ div.projet:hover {
   transition: 0.2s;
 }
 
-.item1 {
-  grid-column: 1/span 2;
-  grid-row: 1/span 2;
+.degrade {
+  width: 100vw;
+  height: 5rem;
 }
 
-.item3 {
-  grid-column: 4/span 2;
-  grid-row: 5/span 2;
+.premier {
+  background-color: #2274A5;
+  opacity: 85%;
+  width: 100vw;
+  height: 1rem;
 }
 
-.item6 {
-  grid-column: 3/span 3;
-  grid-row: 1/span 2;
+.deuxieme {
+  background-color: #2274A5;
+  opacity: 70%;
+  width: 100vw;
+  height: 1rem;
 }
 
-.item7 {
-  grid-column: 4/span 2;
-  grid-row: 3/span 2;
+.troisieme {
+  background-color: #2274A5;
+  opacity: 55%;
+  width: 100vw;
+  height: 1rem;
 }
 
-.item8 {
-  grid-column: 1/span 1;
-  grid-row: 3/span 4;
+.quatrieme {
+  background-color: #2274A5;
+  opacity: 40%;
+  width: 100vw;
+  height: 1rem;
 }
 
-.item10 {
-  grid-column: 2/span 2;
-  grid-row: 3/span 4;
+.cinquieme {
+  background-color: #2274A5;
+  opacity: 20%;
+  width: 100vw;
+  height: 1rem;
 }
 
-.item10 {
-  grid-row: 4/span 5;
+/* *****projet img************ */
+/* *****Images a changer pour chaque projet************ */
+#projet1 {
+  background-image: url(img/_LogoTIM.png);
+  background-size: cover;
+}
+
+#projet2 {
+  background-image: url(img/_LogoTIM.png);
+  background-size: cover;
+}
+
+#projet3 {
+  background-image: url(img/_LogoTIM.png);
+  background-size: cover;
+}
+
+#projet4 {
+  background-image: url(img/_LogoTIM.png);
+  background-size: cover;
+}
+
+#projet5 {
+  background-image: url(img/_LogoTIM.png);
+  background-size: cover;
+}
+
+/* *****project container and divs************ */
+div.cont-projet {
+  display: grid;
+  justify-content: center;
+  background-color: rgb(196, 231, 212);
+  width: -webkit-fill-available;
+  overflow: scroll;
+  padding: 5%;
+}
+
+.projet {
+  height: 280px;
+  width: 200px;
+  background-color: #030027;
+  border-radius: 10px;
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+  box-shadow: 3px 2px 50px rgb(202, 245, 255);
+  margin-bottom: -5vh;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.projet:hover {
+  transform: scale(105%);
+  transition: 0.4s ease-out;
+}
+
+.projet:hover ~ .projet {
+  position: relative;
+  transition: 0.4s ease-out;
+}
+
+/* The actual projet (div) */
+.projet .texteProjet {
+  visibility: hidden;
+  width: 120px;
+  color: #030027;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 30%;
+  left: -70%;
+}
+
+.projet .texteProjet2 {
+  visibility: hidden;
+  width: 120px;
+  color: #030027;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 30%;
+  right: -70%;
+}
+
+/* Toggle this class - hide and show the projet */
+.projet .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the projet) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.title {
+  color: #C4E7D4;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+@media screen and (max-width: 450px) {
+  .degrade {
+    width: 100vw;
+    height: 5rem;
+  }
+  .premier {
+    background-color: #2274A5;
+    opacity: 85%;
+    width: 100vw;
+    height: 1rem;
+  }
+  .deuxieme {
+    background-color: #2274A5;
+    opacity: 70%;
+    width: 100vw;
+    height: 1rem;
+  }
+  .troisieme {
+    background-color: #2274A5;
+    opacity: 55%;
+    width: 100vw;
+    height: 1rem;
+  }
+  .quatrieme {
+    background-color: #2274A5;
+    opacity: 40%;
+    width: 100vw;
+    height: 1rem;
+  }
+  .cinquieme {
+    background-color: #2274A5;
+    opacity: 20%;
+    width: 100vw;
+    height: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */

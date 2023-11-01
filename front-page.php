@@ -25,6 +25,14 @@
             </main>
         </section>
 
+        <div class="degrade">
+            <div class="premier"></div>
+            <div class="deuxieme"></div>
+            <div class="troisieme"></div>
+            <div class="quatrieme"></div>
+            <div class="cinquieme"></div>
+        </div>
+
         <section class="description" id="description">
             <h6>PROGRAMME</h6>
             <h2>La technique</h2>
