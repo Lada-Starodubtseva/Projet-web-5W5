@@ -43,4 +43,9 @@
 * Auteur : Samuel-André Antenor
 * Lien vers l'extension : https://github.com/samuelantenor/carroussel-enseignants
 
+### Extension #
+* Permet de créer un caroussel pour afficher les projets d'élèves
+* Auteur : Lada Starodubtseva
+* Lien vers l'extension : https://github.com/Lada-Starodubtseva/Projets-plugin
+
 ## Lien vers le site : https://gftnth00.mywhc.ca/tim04/
