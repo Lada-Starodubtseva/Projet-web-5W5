@@ -49,14 +49,6 @@
         <?php get_template_part("templates-parts/projets"); ?>
  
   
-            
-            <!-- <div class="degrade">
-                <div class="cinquieme"></div>
-                <div class="quatrieme"></div>
-                <div class="troisieme"></div> 
-                <div class="deuxieme"></div>
-                <div class="premier"></div>
-            </div> -->
 
             <div class="degrade">
                 <div class="premier"></div>
