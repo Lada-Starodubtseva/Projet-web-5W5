@@ -15,7 +15,7 @@ Text Domain: 2023-5w4
 @import "variables/dimension";
 @import "variables/root";
 @import "normalize/normalize";
-//@import "normalize/box-sizing";
+
 
 /* --------------------------------------------- base */
 @import "base/main";
@@ -24,15 +24,11 @@ Text Domain: 2023-5w4
 @import "base/heading";
 
 
-
 /* --------------------------------------------- composant */
 @import "composant/footer";
-@import "composant/description";
 
-/* ----------------------------------------------- layout */
+/* ----------------------------------------------- plugins */
+@import "../../../../plugins/Projets-plugin/Projet";
 
-/* ----------------------------------------------- template-parts */
-@import "template-parts/enseignants";
-@import "template-parts/cours";
-@import "template-parts/futur";
-@import "template-parts/projets";
+
+ 
