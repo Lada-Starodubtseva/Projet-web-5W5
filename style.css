@@ -1002,6 +1002,8 @@ p {
   background-color: #030027;
   padding: 20px 0;
   position: relative;
+  width: 100%;
+  height: 600px;
 }
 .section-profs button {
   background-color: transparent;
@@ -1028,7 +1030,8 @@ p {
   display: flex;
   align-items: center;
   position: relative;
-  width: 80%;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   margin: 0 50px;
 }
@@ -1038,18 +1041,48 @@ p {
   align-items: center;
 }
 .section-profs .carroussel .images .article {
-  flex: 0 0 auto;
-  width: calc(100% - 40px);
-  height: 800px;
-  margin-right: 20px;
-  padding: 20px;
-  background-color: #030027;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  opacity: 0;
+  height: 100%;
+  width: calc(25% - 40px);
+  margin-right: 10px;
+  padding: 10px;
   animation-name: fadeIn;
   animation-duration: 1s;
   animation-delay: 0.3s;
   animation-fill-mode: forwards;
+}
+.section-profs .carroussel .images .article .article.expanded {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: none;
+}
+.section-profs .carroussel .images .article .article.expanded img {
+  width: 100%;
+  height: auto;
+  max-height: 50%;
+  margin-top: 0;
+}
+.section-profs .carroussel .images .article .article.expanded .article-content {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 100;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.section-profs .carroussel .images .article img {
+  cursor: pointer;
 }
 @keyframes fadeIn {
   to {
@@ -1076,8 +1109,11 @@ p {
 .section-profs .carroussel .images .article img.active {
   opacity: 1;
 }
-
 .enseignants h1 {
   margin-left: 40px;
   color: #86e6b1;
+}
+
+.article.expanded .article-content {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
