@@ -5,7 +5,6 @@ html{
     scroll-behavior: smooth;
   }
   body {
-    background-color: #030027;
     color: #ffff;
     margin: 0;
   }
@@ -41,7 +40,6 @@ html{
     font-size: 15px;
     margin: 3%;
   }
-
   
   div.main-accueil {
     height: 50vh;
@@ -143,7 +141,7 @@ html{
   /* ************histoire************ */
   /**********************************/
   
-  section.description{
+  /*section.description{
     margin-top: 30vh;
     justify-content: center;
     display: flex;
@@ -153,7 +151,7 @@ html{
   }
   
   #background{
-    // background-image: url(Medias/green-squares.PNG);
+    background-image: url(Medias/green-squares.PNG);
     background-position-x: -20vw;
     width: 100vw;
     height: 50%;
@@ -164,7 +162,7 @@ html{
     margin-top: -30%;
   }
   #background-deux{
-    // background-image: url(Medias/green-squares-transform.PNG);
+    background-image: url(Medias/green-squares-transform.PNG);
     background-position-x: 30vw;
     width: 100vw;
     height: 50%;
@@ -184,7 +182,7 @@ html{
     text-align: justify;
     margin-top: 23vh;
     margin-bottom: 20vh;
-  }
+  }*/
   
   
   
@@ -216,15 +214,15 @@ html{
   .container {
     height: 500px;
     display: flex;
-    background-color: rgb(196 231 212 );
+    background-color: #C4E7D4;
   }
   
   div.cont-prof{
     display: grid;
-    justify-content: center;
-    background-color: rgb(196 231 212 );
-    width: -webkit-fill-available;
-    overflow: scroll;
+      justify-content: center;
+      background-color: #C4E7D4;
+      width: -webkit-fill-available;
+      overflow: scroll;
   }
   
   .prof {
@@ -266,40 +264,8 @@ html{
   
   
   
-@media screen and (max-width: 450px) {
-
-  .degrade {
-    width: 100vw;
-    height: 5rem;
-  }
-  .premier {
-    background-color: #2274A5;
-    opacity: 85%;
-    width: 100vw;
-    height: 1rem;
-  }
-  .deuxieme {
-    background-color: #2274A5;
-    opacity: 70%;
-    width: 100vw;
-    height: 1rem;
-  }
-  .troisieme {
-    background-color: #2274A5;
-    opacity: 55%;
-    width: 100vw;
-    height: 1rem;
-  }
-  .quatrieme {
-    background-color: #2274A5;
-    opacity: 40%;
-    width: 100vw;
-    height: 1rem;
-  }
-  .cinquieme {
-    background-color: #2274A5;
-    opacity: 20%;
-    width: 100vw;
-    height: 1rem;
-  }
-}
+  
+  /**********************************/
+  /* ************décos************ */
+  /**********************************/
+  

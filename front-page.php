@@ -45,11 +45,17 @@
                 harum!</p>
         </section>
 
+        <?php   
+            get_template_part("templates-parts/cours");
+        ?>
+
+        <?php   
+            get_template_part("templates-parts/enseignants");
+        ?>
 
         <?php get_template_part("templates-parts/projets"); ?>
  
-  
-
+        <section>
             <div class="degrade">
                 <div class="premier"></div>
                 <div class="deuxieme"></div>
@@ -58,6 +64,10 @@
                 <div class="cinquieme"></div>
             </div>
         </section>
+
+        <?php 
+            get_template_part("templates-parts/futur");
+        ?>
     </body>
 
 
