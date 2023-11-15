@@ -43,9 +43,15 @@
 * Auteur : Samuel-André Antenor
 * Lien vers l'extension : https://github.com/samuelantenor/carroussel-enseignants
 
-### Extension #
+### Extension #3
 * Permet de créer un caroussel pour afficher les projets d'élèves
 * Auteur : Lada Starodubtseva
 * Lien vers l'extension : https://github.com/Lada-Starodubtseva/Projets-plugin
+
+
+### Extension #4
+* Permet d'accéder à la section futur et afficher les articles
+* Auteur : Yehya Refaat
+* Lien vers l'extension : https://github.com/Yehyus/5w5-Plugin-Futur
 
 ## Lien vers le site : https://gftnth00.mywhc.ca/tim04/
