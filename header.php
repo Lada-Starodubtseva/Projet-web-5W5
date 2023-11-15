@@ -21,23 +21,42 @@
 </head>
 <body class="site">
     <header class="site__header">
-<img src="Medias/_LogoTIM_carre.png" alt="logo">
-        <div class="menu">
-            <nav class="nav-menu">
-                <ul>
-                    <li class="Cours"><span>Cours</span></li>
-                    <li class="Enseignant"><span>Enseignant</span></li>
-                    <li class="Projets"><span>Projets</span></li>
-                    <li class="Stages"><span>Stages</span></li>
-                </ul>
-            </nav>
-            <div class="searchBox">
-                <input class="searchInput" type="text" name="" placeholder="Rechercher...">
-                <button class="searchButton" href="#">
-                    <i class="material-icons">
-                        search
-                    </i>
-                </button>
+        <div id="header-mobile">
+            <img src="http://localhost:8080/5w5/wp-content/uploads/2023/11/MicrosoftTeams-image.png" alt="logo">
+            <span class="material-symbols-rounded">menu</span>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li>Cours</li>
+                        <li>Enseignants</li>
+                        <li>Projets</li>
+                        <li>Stages</li>
+                    </ul>
+                    <div>
+                        <?php dynamic_sidebar( 'header-recherche' ); ?>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div id="header-ordi" class="ordi">
+            <img src="http://localhost:8080/5w5/wp-content/uploads/2023/11/MicrosoftTeams-image.png" alt="logo">
+            <div class="menu">
+                <nav class="nav-menu">
+                    <ul>
+                        <li class="Cours"><span>Cours</span></li>
+                        <li class="Enseignant"><span>Enseignant</span></li>
+                        <li class="Projets"><span>Projets</span></li>
+                        <li class="Stages"><span>Stages</span></li>
+                    </ul>
+                </nav>
+                <div class="searchBox">
+                    <input class="searchInput" type="text" name="" placeholder="Rechercher...">
+                    <button class="searchButton" href="#">
+                        <i class="material-icons">
+                            search
+                        </i>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
