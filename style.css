@@ -85,7 +85,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -378,6 +379,7 @@ div.main-accueil {
 
 div.texte-arrow {
   display: flex;
+  width: -moz-fit-content;
   width: fit-content;
   justify-content: space-between;
   flex-wrap: nowrap;
@@ -893,6 +895,7 @@ p {
   border: 1px solid #C4E7D4;
   border-radius: 2rem;
   padding: 0.4rem;
+  max-width: -moz-fit-content;
   max-width: fit-content;
 }
 .site__footer .infos .recherche #block-7 form .wp-block-search__inside-wrapper input {
@@ -927,7 +930,8 @@ p {
 .site__footer .infos .medias .icones {
   display: flex;
   justify-content: center;
-  column-gap: 1rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
 }
 .site__footer .infos .medias .icones .facebook img {
   width: 30px;
@@ -963,7 +967,8 @@ p {
   .site__footer .infos {
     display: flex;
     flex-direction: row;
-    column-gap: 2.5rem;
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
     align-items: baseline;
   }
   .site__footer .infos .adresse, .site__footer .infos .inscription {
@@ -1024,6 +1029,8 @@ p {
   background-color: #030027;
   padding: 20px 0;
   position: relative;
+  width: 100%;
+  height: 600px;
 }
 .section-profs button {
   background-color: transparent;
@@ -1050,7 +1057,8 @@ p {
   display: flex;
   align-items: center;
   position: relative;
-  width: 80%;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   margin: 0 50px;
 }
@@ -1058,50 +1066,68 @@ p {
   flex-grow: 1;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .section-profs .carroussel .images .article {
-  flex: 0 0 auto;
-  width: calc(100% - 40px);
-  height: 800px;
-  margin-right: 20px;
-  padding: 20px;
-  background-color: #030027;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  animation-name: fadeIn;
-  animation-duration: 1s;
-  animation-delay: 0.3s;
-  animation-fill-mode: forwards;
+  width: calc(25% - 40px);
+  margin-right: 10px;
+  padding: 10px;
+  background-color: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
+.section-profs .carroussel .images .article.expanded {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 10%;
+  z-index: 100;
+  margin: 0;
+  padding: 50px;
+  background-color: none;
+  overflow-y: auto;
+  justify-content: start;
 }
-.section-profs .carroussel .images .article h4 {
-  font-size: 40px;
-  margin-bottom: 10px;
-  padding-left: 50px;
-  color: #86e6b1;
+.section-profs .carroussel .images .article.expanded img {
+  display: none;
 }
-.section-profs .carroussel .images .article p {
-  font-size: 16px;
-  color: #ffffff;
+.section-profs .carroussel .images .article.expanded .article-content {
+  color: white;
+  width: 80%;
+  position: absolute;
+  top: -1%;
 }
 .section-profs .carroussel .images .article img {
   max-width: 100%;
   height: auto;
-  margin-top: 20px;
-  opacity: 0.5;
-  transition: opacity 0.3s;
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Add transform to the transition */
 }
-.section-profs .carroussel .images .article img.active {
+.section-profs .carroussel .images .article img:hover, .section-profs .carroussel .images .article img:focus {
   opacity: 1;
+  transform: scale(1.05); /* Slightly scale up the image on hover */
 }
 
-.enseignants h1 {
+.enseignants h2 {
   margin-left: 40px;
-  color: #86e6b1;
+  color: #C4E7D4;
+}
+
+.article-content {
+  display: none;
+}
+
+.article.expanded .article-content {
+  display: block;
+}
+.article.expanded .article-content h4 {
+  padding-left: 50px;
+  color: #C4E7D4;
+}
+.article.expanded .article-content p {
+  color: #ffffff;
 }
 
 .cours {
@@ -1530,7 +1556,6 @@ div.cont-projet {
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -1572,19 +1597,10 @@ div.cont-projet {
 /* Toggle this class - hide and show the projet */
 .projet .show {
   visibility: visible;
-  -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
 }
 
 /* Add animation (fade in the projet) */
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @keyframes fadeIn {
   from {
     opacity: 0;

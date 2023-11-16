@@ -1,98 +1,125 @@
-// Base styling for the 'section-profs'
 .section-profs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #030027;
-    padding: 20px 0;
-    position: relative; // Added to have a point of reference for the absolute positioning of the buttons
-    
-    button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #030027;
+  padding: 20px 0;
+  position: relative; 
+  width: 100%; // Full width of the container
+  height: 600px; // Height of the carousel
+
+  button {
+    background-color: transparent;
+    .material-icons {
+      font-size: 80px;
+      color: #C4E7D4;
       background-color: transparent;
-      .material-icons {
-        font-size: 80px;
-        color: #C4E7D4;
-        background-color: transparent;
-      }
-      border: none;
-      cursor: pointer;
-      z-index: 10;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      margin: 50px;
-      &:first-of-type {
-        left: 0;
-      }
-      &:last-of-type {
-        right: 0;
-      }
     }
-    
-    .carroussel {
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 50px;
+    &:first-of-type {
+      left: 0;
+    }
+    &:last-of-type {
+      right: 0;
+    }
+  }
+  
+  .carroussel {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 50px;
+
+    .images {
+      flex-grow: 1;
       display: flex;
       align-items: center;
-      position: relative;
-      width: 80%;
-      overflow: hidden;
-      margin: 0 50px; // Added margins to make room for the chevrons on the side
+      justify-content: space-between; // Ensure articles are spaced evenly
       
-      
-      .images {
-        flex-grow: 1;
-        display: flex;
-        align-items: center;
-        .article {
-          flex: 0 0 auto;
-          width: calc(100% - 40px);
-          height: 800px; // Add a fixed height
-          margin-right: 20px;
-          padding: 20px;
-          background-color: #030027;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-          opacity: 0; // Initially hidden
-    
-          animation-name: fadeIn;
-          animation-duration: 1s; // One second
-          animation-delay: 0.3s; // 300ms delay
-          animation-fill-mode: forwards;
-        
-          @keyframes fadeIn {
-            to {
-              opacity: 1;
-            }
+      .article {
+        width: calc(25% - 40px); // Original width for non-expanded articles
+        margin-right: 10px;
+        padding: 10px;
+        background-color:none; // Assuming a white background for article content
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2); // Optional shadow for depth
+        transition: all 0.3s ease; // Smooth transition for expanding and shrinking
+        cursor: pointer;
+
+        &.expanded {
+          position: absolute; // Position over the carousel
+          top: 0;
+          left: 0;
+          width: 50%; // Expand to full width
+          height: 10%; // Expand to full height
+          z-index: 100; // Ensure it's above other content
+          margin: 0; // Reset margins when expanded
+          padding: 50px; // Add padding for internal spacing
+          background-color: none; // Slightly transparent white background
+          overflow-y: auto; // Enable scrolling for overflow content
+          justify-content: start; // Align content to the top
+          
+
+          img{
+
+            display: none;
           }
-         
-          h4 {
-            font-size: 40px;
-            margin-bottom: 10px;
-            padding-left: 50px;
-            color: #86e6b1;
+
+          .article-content{
+            color: white;
+            width: 80%;
+            position: absolute;
+            top: - 1%;
+            
           }
-          p {
-            font-size: 16px;
-            color: #ffffff;
-          }
-          img {
-            max-width: 100%;
-            height: auto;
-            margin-top: 20px;
-            opacity: 0.5;
-            transition: opacity 0.3s;
-          }
-          img.active {
+        }
+
+        img {
+          max-width: 100%;
+          height: auto;
+          opacity: 0.8;
+          transition: transform 0.3s ease, opacity 0.3s ease; /* Add transform to the transition */
+
+          &:hover, &:focus {
             opacity: 1;
+            transform: scale(1.05); /* Slightly scale up the image on hover */
           }
         }
       }
     }
   }
-  
-  .enseignants{
-    h1{
-      margin-left: 40px;
-      color: #86e6b1;
-  
-    }
 }
+
+.enseignants {
+  h2 {
+    margin-left: 40px;
+    color: #C4E7D4;
+  }
+}
+
+// Additional styles for article content
+.article-content {
+  display: none; // Hide by default
   
+}
+
+.article.expanded .article-content {
+  display: block; // Show when article is expanded
+  h4{
+    padding-left: 50px;
+    color: #C4E7D4;
+
+  }
+  
+  p {
+    color: #ffffff; // Text color for the expanded article
+  }
+}
