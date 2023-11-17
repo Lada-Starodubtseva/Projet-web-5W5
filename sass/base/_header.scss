@@ -1,6 +1,8 @@
 html {
     scroll-behavior: smooth;
 
+    /* ---------------------------------------------- Menu Mobile --------- */
+
     .header-mobile {
         width: 100vw;
         display: flex;
@@ -10,15 +12,18 @@ html {
 
         overflow: hidden;
 
+        // Logo du TIM
         img {
             width: 3rem;
             height: auto;
         }
 
+        // Checkbox pour le menu
         #menu-mobile {
             display: none;
         }
 
+        // Conteneur pour menu burger
         .burger {
             display: flex;
             flex-direction: column;
@@ -36,6 +41,7 @@ html {
 
             transition: background-color 0.3s, color 0.3s;
 
+            // Ligne du menu burger
             .ligne {
                 background-color: #030027;
                 border: 1px solid #030027;
@@ -51,10 +57,12 @@ html {
             border: 1px solid #2274A5;
         }
 
+        // Quand le checkbox est cliqué, le contenant du menu apparaît
         .menu-mobile:checked ~ .menu {
             opacity: 1;
         }
 
+        // Contenant qui apparaît
         .menu {
             position: absolute;
             opacity: 0;
@@ -63,6 +71,7 @@ html {
             z-index: 5;
             width: 100vw;
 
+            // Menu
             .nav {
                 height: 70vh;
                 padding: 3rem 2rem;
@@ -72,6 +81,7 @@ html {
                 flex-direction: column;
                 background-color: #030027;
 
+                // Liste pour les différentes sections
                 ul {
                     width: 100%;
                     display: flex;
@@ -92,6 +102,7 @@ html {
                     }
                 }
 
+                // Boîte de recherche Wordpress
                 .searchBox-mobile {
                     width: 50%;
                 }
