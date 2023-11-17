@@ -8,6 +8,8 @@ html{
     color: #ffff;
     margin: 0;
   }
+
+  
   header{
     display: flex;
   }
@@ -16,6 +18,7 @@ html{
     width: 15vw;
     padding: 2%;
   }
+  /*
   div.menu {
     display: flex;
     justify-content: space-between;
@@ -40,7 +43,7 @@ html{
     font-size: 15px;
     margin: 3%;
   }
-  
+  */
   div.main-accueil {
     height: 50vh;
     width: 60vw;
@@ -135,54 +138,6 @@ html{
       transform: rotate(45deg) translate(20px, 20px);
     }
   }
-  
-  
-  /**********************************/
-  /* ************histoire************ */
-  /**********************************/
-  
-  /*section.description{
-    margin-top: 30vh;
-    justify-content: center;
-    display: flex;
-    position: relative;
-  
-  
-  }
-  
-  #background{
-    background-image: url(Medias/green-squares.PNG);
-    background-position-x: -20vw;
-    width: 100vw;
-    height: 50%;
-    position: absolute;
-    z-index: -1;
-    background-size: 80vw;
-    background-repeat: no-repeat;
-    margin-top: -30%;
-  }
-  #background-deux{
-    background-image: url(Medias/green-squares-transform.PNG);
-    background-position-x: 30vw;
-    width: 100vw;
-    height: 50%;
-    position: absolute;
-    z-index: -1;
-    background-size: 80vw;
-    background-repeat: no-repeat;
-    margin-top: -30%;
-  }
-  
-  
-  section.description p {
-    color: #C4E7D4;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 8%;
-    width: 80vw;
-    text-align: justify;
-    margin-top: 23vh;
-    margin-bottom: 20vh;
-  }*/
   
   
   

@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -21,25 +19,30 @@
 </head>
 <body class="site">
     <header class="site__header">
-        <div id="header-mobile">
-            <img src="http://localhost:8080/5w5/wp-content/uploads/2023/11/MicrosoftTeams-image.png" alt="logo">
-            <span class="material-symbols-rounded">menu</span>
+        <div id="header-mobile" class="header-mobile">
+            <img src="http://localhost:8080/5w5/wp-content/uploads/2023/11/TIM-Blanc.png" alt="logo">
+            <input class="menu-mobile" type="checkbox" id="menu-mobile">
+            <label class="burger" for="menu-mobile">
+                <span class="ligne"></span>
+                <span class="ligne"></span>
+                <span class="ligne"></span>
+            </label>
             <div class="menu">
-                <nav>
+                <nav class="nav">
                     <ul>
                         <li>Cours</li>
                         <li>Enseignants</li>
                         <li>Projets</li>
                         <li>Stages</li>
                     </ul>
-                    <div>
+                    <div class="searchBox-mobile">
                         <?php dynamic_sidebar( 'header-recherche' ); ?>
                     </div>
                 </nav>
             </div>
         </div>
         <div id="header-ordi" class="ordi">
-            <img src="http://localhost:8080/5w5/wp-content/uploads/2023/11/MicrosoftTeams-image.png" alt="logo">
+            <img src="http://localhost:8080/5w5/wp-content/uploads/2023/11/TIM-Blanc.png" alt="logo">
             <div class="menu">
                 <nav class="nav-menu">
                     <ul>

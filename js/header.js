@@ -4,12 +4,15 @@ function changerHeaders() {
 
     if (window.innerWidth <= 767) {
         ordiHeader.style.display = 'none';
-        mobileHeader.style.display = 'content';
+        mobileHeader.style.display = 'flex';
     } else {
         ordiHeader.style.display = 'flex';
         mobileHeader.style.display = 'none';
     }
 }
 
-window.onload = changerHeaders;
-window.onresize = changerHeaders;
+window.addEventListener('load', changerHeaders);
+window.addEventListener('resize', changerHeaders);
+
+//window.onload = changerHeaders;
+//window.onresize = changerHeaders;
