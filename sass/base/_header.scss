@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 
     /* ---------------------------------------------- Menu Mobile --------- */
 
@@ -9,8 +10,6 @@ html {
         justify-content: space-between;
         align-items: center;
         padding: 1rem 1.5rem 1rem 1rem;
-
-        overflow: hidden;
 
         // Logo du TIM
         img {
@@ -60,18 +59,20 @@ html {
 
         // Quand le checkbox est cliqué, le contenant du menu apparaît
         .menu-mobile:checked ~ .menu {
-            opacity: 1;
+            transform: translateX(0);
         }
 
         // Contenant qui apparaît
         .menu {
             position: absolute;
-            opacity: 0;
-            left: 0vw;
+            transform: translateX(100vw);
             top: 0vw;
+            left: 0vw;
             z-index: 5;
             width: 100vw;
             height: 100vh;
+
+            transition: transform 0.3s;
 
             // Menu
             .nav {
