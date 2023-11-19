@@ -28,6 +28,7 @@ html {
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
+            text-align: center;
             row-gap: 0.2rem;
             z-index: 10;
 
@@ -60,6 +61,23 @@ html {
         // Quand le checkbox est cliqué, le contenant du menu apparaît
         .menu-mobile:checked ~ .menu {
             transform: translateX(0);
+        }
+
+        .menu-mobile:checked + .burger {
+            padding: 0.5rem 0.6rem 0.5rem 0.4rem;
+            justify-content: center;
+        }
+
+        .menu-mobile:checked + .burger > .ligne:nth-of-type(1) {
+            transform: rotate(-40deg) translate(0px, 3.5px);
+        }
+
+        .menu-mobile:checked + .burger > .ligne:nth-of-type(2) {
+            display: none;
+        }
+
+        .menu-mobile:checked  + .burger > .ligne:nth-of-type(3) {
+            transform: rotate(40deg) translate(0px, -4px);
         }
 
         // Contenant qui apparaît
