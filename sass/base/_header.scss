@@ -95,7 +95,7 @@ html {
                     padding-left: 0;
                     margin: 6rem 0rem 0rem 0rem;
                     
-                    li {
+                    a {
                         width: 100%;
                         font-family: 'Martian Mono', monospace;
                         //font-family: 'Work Sans', sans-serif;
@@ -103,12 +103,15 @@ html {
                         font-size: large;
                         padding: 2rem 0rem;
                         text-align: center;
+                        color: #C4E7D4;
+
+                        text-decoration: none;
                         cursor: pointer;
 
                         transition: background-color 0.3s, color 0.3s;
                     }
 
-                    li:hover {
+                    a:hover {
                         background-color: #2274A5;
                         color: #030027;
                     }

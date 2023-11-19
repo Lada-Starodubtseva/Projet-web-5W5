@@ -27,13 +27,13 @@
                 <span class="ligne"></span>
                 <span class="ligne"></span>
             </label>
-            <div class="menu">
+            <div id="le-menu" class="menu">
                 <nav class="nav">
                     <ul>
-                        <li>Cours</li>
-                        <li>Enseignants</li>
-                        <li>Projets</li>
-                        <li>Stages</li>
+                        <a href="#cours" id="btn-cours">Cours</a>
+                        <a id="btn-profs">Enseignants</a>
+                        <a id="btn-projets">Projets</a>
+                        <a id="btn-stages">Stages</a>
                     </ul>
                     <div class="searchBox-mobile">
                         <?php dynamic_sidebar( 'header-recherche' ); ?>
