@@ -22,7 +22,7 @@
         <div id="header-mobile" class="header-mobile">
             <img src="http://localhost:8080/5w5/wp-content/uploads/2023/11/TIM-Blanc.png" alt="logo">
             <input class="menu-mobile" type="checkbox" id="menu-mobile">
-            <label class="burger" for="menu-mobile">
+            <label id="le-burger" class="burger" for="menu-mobile">
                 <span class="ligne"></span>
                 <span class="ligne"></span>
                 <span class="ligne"></span>

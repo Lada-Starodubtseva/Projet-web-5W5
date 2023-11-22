@@ -138,6 +138,45 @@ html{
       transform: rotate(45deg) translate(20px, 20px);
     }
   }
+
+  .degrade {
+    width: 100vw;
+    height: 5rem;
+  }
+    .premier {
+        background-color: #2274A5;
+        opacity: 85%;
+        width: 100vw;
+        height: 1rem;
+    }
+  
+    .deuxieme {
+        background-color: #2274A5;
+        opacity: 70%;
+        width: 100vw;
+        height: 1rem;
+    }
+  
+    .troisieme {
+        background-color: #2274A5;
+        opacity: 55%;
+        width: 100vw;
+        height: 1rem;
+    }
+  
+    .quatrieme {
+        background-color: #2274A5;
+        opacity: 40%;
+        width: 100vw;
+        height: 1rem;
+    }
+  
+    .cinquieme {
+        background-color: #2274A5;
+        opacity: 20%;
+        width: 100vw;
+        height: 1rem;
+    }
   
   
   
@@ -216,11 +255,4 @@ html{
     left: 20px;
     top: 15px;
   }
-  
-  
-  
-  
-  /**********************************/
-  /* ************décos************ */
-  /**********************************/
   
