@@ -31,7 +31,7 @@
                 <nav class="nav">
                     <ul>
                         <a href="#cours" id="btn-cours">Cours</a>
-                        <a id="btn-profs">Enseignants</a>
+                        <a href="#enseignants" id="btn-profs">Enseignants</a>
                         <a id="btn-projets">Projets</a>
                         <a id="btn-stages">Stages</a>
                     </ul>
@@ -41,24 +41,19 @@
                 </nav>
             </div>
         </div>
-        <div id="header-ordi" class="ordi">
+        <div id="header-ordi" class="header-ordi">
             <img src="http://localhost:8080/5w5/wp-content/uploads/2023/11/TIM-Blanc.png" alt="logo">
             <div class="menu">
-                <nav class="nav-menu">
+                <nav class="nav">
                     <ul>
-                        <li class="Cours"><span>Cours</span></li>
-                        <li class="Enseignant"><span>Enseignant</span></li>
-                        <li class="Projets"><span>Projets</span></li>
-                        <li class="Stages"><span>Stages</span></li>
+                        <a href="#cours">Cours</a>
+                        <a href="#enseignants">Enseignant</a>
+                        <a>Projets</a>
+                        <a>Stages</a>
                     </ul>
                 </nav>
-                <div class="searchBox">
-                    <input class="searchInput" type="text" name="" placeholder="Rechercher...">
-                    <button class="searchButton" href="#">
-                        <i class="material-icons">
-                            search
-                        </i>
-                    </button>
+                <div class="searchBox-ordi">
+                    <?php dynamic_sidebar( 'header-recherche' ); ?>
                 </div>
             </div>
         </div>
