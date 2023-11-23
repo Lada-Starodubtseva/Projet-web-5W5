@@ -6,27 +6,35 @@
   padding: 20px 0;
   position: relative; 
   width: 100%; // Full width of the container
-  height: 600px; // Height of the carousel
+  height: 780px; // Height of the carousel
+
+  .carroussel-container {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Space out the arrows and carousel */
+    align-items: center; /* Vertically align the items */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+  }
 
   button {
     background-color: transparent;
-    .material-icons {
-      font-size: 80px;
-      color: #C4E7D4;
-      background-color: transparent;
-    }
     border: none;
     cursor: pointer;
-    z-index: 10;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 50px;
-    &:first-of-type {
-      left: 0;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+
+    .material-icons {
+      font-size: 80px;
+      color: #C4E7D4; /* Original color */
+      transition: color 0.3s ease; /* Smooth transition for color change */
+      
     }
-    &:last-of-type {
-      right: 0;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.2); /* Slight background on hover */
+      .material-icons {
+        color: #ffffff; /* Change icon color on hover */
+        
+      }
     }
   }
   
@@ -37,7 +45,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    margin: 0 50px;
+    margin: 10px;
 
     .images {
       flex-grow: 1;
@@ -46,26 +54,29 @@
       justify-content: space-between; // Ensure articles are spaced evenly
       
       .article {
-        width: calc(25% - 40px); // Original width for non-expanded articles
-        margin-right: 10px;
-        padding: 10px;
+        width: calc(80% - 0px); // Original width for non-expanded articles
+        margin-right: 5px;
+        padding: 15px;
         background-color:none; // Assuming a white background for article content
         box-shadow: 0 2px 5px rgba(0,0,0,0.2); // Optional shadow for depth
         transition: all 0.3s ease; // Smooth transition for expanding and shrinking
         cursor: pointer;
+       
+        
 
         &.expanded {
           position: absolute; // Position over the carousel
-          top: 0;
+          top: -5%;
           left: 0;
-          width: 50%; // Expand to full width
+          width: 90%; // Expand to full width
           height: 10%; // Expand to full height
           z-index: 100; // Ensure it's above other content
           margin: 0; // Reset margins when expanded
           padding: 50px; // Add padding for internal spacing
           background-color: none; // Slightly transparent white background
-          overflow-y: auto; // Enable scrolling for overflow content
+          overflow-y: none; // Enable scrolling for overflow content
           justify-content: start; // Align content to the top
+       
           
 
           img{
@@ -83,7 +94,7 @@
         }
 
         img {
-          max-width: 100%;
+          max-width:100%;
           height: auto;
           opacity: 0.8;
           transition: transform 0.3s ease, opacity 0.3s ease; /* Add transform to the transition */
@@ -107,10 +118,14 @@
 
 // Additional styles for article content
 .article-content {
-  display: none; // Hide by default
+  display: none; // Hide by default  
   
 }
+.article-image{
 
+  
+
+}
 .article.expanded .article-content {
   display: block; // Show when article is expanded
   h4{
@@ -122,4 +137,78 @@
   p {
     color: #ffffff; // Text color for the expanded article
   }
+}
+/* Media Query for phones */
+@media (max-width: 600px) {
+  .section-profs {
+    padding: 10px 0; /* Adjust padding for mobile view */
+    height: 600px; /* Adjust height for mobile view */
+
+
+    .carroussel-container {
+      flex-direction: row; /* Keep arrows on the sides */
+      justify-content: space-between; /* Space out the arrows and carousel */
+    }
+
+    button {
+      .material-icons {
+        font-size: 40px; /* Reduce the size of arrow icons */
+      }
+    }
+
+    .carroussel {
+      margin: 5px; /* Adjust margin for mobile view */
+
+      .images {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row; /* Keep a row layout for the articles */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        align-items: center; /* Center-align the articles */
+
+        .article {
+          width: 100%; /* Full width for each article */
+          margin-right: 5px; /* Adjust right margin */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
+          
+          img {
+            width: 80%; /* Adjust image width */
+            height: auto;
+            opacity: 1; /* Adjust opacity */
+          }
+
+          .article-content {
+            display: block; /* Always display article content */
+            position: relative; /* Adjust position */
+            width: 80%; /* Adjust width */
+            padding: 15px; /* Adjust padding */
+            color: #ffffff; /* Text color */
+            
+
+            h4{
+              font-size: 1.2em; /* Increase font size */
+              color: #C4E7D4;
+            }
+            p{
+              font-size: 0.5em;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+
+.enseignants h2 {
+    margin: 0; /* Center the title */
+    text-align: center; /* Center the text */
+    font-size: 2em; /* Increase the font size */
+    color: #C4E7D4;
+    padding-top: 100px;
+}
+
 }

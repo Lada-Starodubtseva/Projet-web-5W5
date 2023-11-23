@@ -1030,28 +1030,31 @@ p {
   padding: 20px 0;
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 780px;
+}
+.section-profs .carroussel-container {
+  display: flex; /* Use flexbox */
+  justify-content: space-between; /* Space out the arrows and carousel */
+  align-items: center; /* Vertically align the items */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
 }
 .section-profs button {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  z-index: 10;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  margin: 50px;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 .section-profs button .material-icons {
   font-size: 80px;
-  color: #C4E7D4;
-  background-color: transparent;
+  color: #C4E7D4; /* Original color */
+  transition: color 0.3s ease; /* Smooth transition for color change */
 }
-.section-profs button:first-of-type {
-  left: 0;
+.section-profs button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Slight background on hover */
 }
-.section-profs button:last-of-type {
-  right: 0;
+.section-profs button:hover .material-icons {
+  color: #ffffff; /* Change icon color on hover */
 }
 .section-profs .carroussel {
   display: flex;
@@ -1060,7 +1063,7 @@ p {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  margin: 0 50px;
+  margin: 10px;
 }
 .section-profs .carroussel .images {
   flex-grow: 1;
@@ -1069,9 +1072,9 @@ p {
   justify-content: space-between;
 }
 .section-profs .carroussel .images .article {
-  width: calc(25% - 40px);
-  margin-right: 10px;
-  padding: 10px;
+  width: calc(80% - 0px);
+  margin-right: 5px;
+  padding: 15px;
   background-color: none;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
@@ -1079,15 +1082,15 @@ p {
 }
 .section-profs .carroussel .images .article.expanded {
   position: absolute;
-  top: 0;
+  top: -5%;
   left: 0;
-  width: 50%;
+  width: 90%;
   height: 10%;
   z-index: 100;
   margin: 0;
   padding: 50px;
   background-color: none;
-  overflow-y: auto;
+  overflow-y: none;
   justify-content: start;
 }
 .section-profs .carroussel .images .article.expanded img {
@@ -1130,6 +1133,64 @@ p {
   color: #ffffff;
 }
 
+/* Media Query for phones */
+@media (max-width: 600px) {
+  .section-profs {
+    padding: 10px 0; /* Adjust padding for mobile view */
+    height: 600px; /* Adjust height for mobile view */
+  }
+  .section-profs .carroussel-container {
+    flex-direction: row; /* Keep arrows on the sides */
+    justify-content: space-between; /* Space out the arrows and carousel */
+  }
+  .section-profs button .material-icons {
+    font-size: 40px; /* Reduce the size of arrow icons */
+  }
+  .section-profs .carroussel {
+    margin: 5px; /* Adjust margin for mobile view */
+  }
+  .section-profs .carroussel .images {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row; /* Keep a row layout for the articles */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    align-items: center; /* Center-align the articles */
+  }
+  .section-profs .carroussel .images .article {
+    width: 100%; /* Full width for each article */
+    margin-right: 5px; /* Adjust right margin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .section-profs .carroussel .images .article img {
+    width: 80%; /* Adjust image width */
+    height: auto;
+    opacity: 1; /* Adjust opacity */
+  }
+  .section-profs .carroussel .images .article .article-content {
+    display: block; /* Always display article content */
+    position: relative; /* Adjust position */
+    width: 80%; /* Adjust width */
+    padding: 15px; /* Adjust padding */
+    color: #ffffff; /* Text color */
+  }
+  .section-profs .carroussel .images .article .article-content h4 {
+    font-size: 1.2em; /* Increase font size */
+    color: #C4E7D4;
+  }
+  .section-profs .carroussel .images .article .article-content p {
+    font-size: 0.5em;
+  }
+  .enseignants h2 {
+    margin: 0; /* Center the title */
+    text-align: center; /* Center the text */
+    font-size: 2em; /* Increase the font size */
+    color: #C4E7D4;
+    padding-top: 100px;
+  }
+}
 .cours {
   padding: 0rem 2rem 1rem 2rem;
   display: flex;
