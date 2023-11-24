@@ -31,6 +31,14 @@
   - Futur
 * Ajouter des animations dans les sections
 * Ajout des médias queries manquants
+#### Date de fin du sprint : 29/11/2023
+
+## Sprint 4
+* Correction des problèmes de la fin du sprint 3
+* Continuation du développement des section
+  - Description
+* Mise à jour du design de l'accueil
+* Mise en place du deuxième menu en mode ordi
 #### Date de fin du sprint : xx/xx/2023
 
 ### Extension #1
@@ -47,7 +55,6 @@
 * Permet de créer un caroussel pour afficher les projets d'élèves
 * Auteur : Lada Starodubtseva
 * Lien vers l'extension : https://github.com/Lada-Starodubtseva/Projets-plugin
-
 
 ### Extension #4
 * Permet d'accéder à la section futur et afficher les articles
