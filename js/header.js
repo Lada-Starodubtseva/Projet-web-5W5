@@ -1,3 +1,7 @@
+/*
+    Fonction qui permet de montre le menu mobile lorsque la fenêtre est plus petit ou égale à 767 px
+    et de montrer le menu ordi lorsque la fenêtre est plus grande que 768 px
+*/
 function changerHeaders() {
     let ordiHeader = document.getElementById('header-ordi');
     let mobileHeader = document.getElementById('header-mobile');
@@ -14,34 +18,28 @@ function changerHeaders() {
 window.addEventListener('load', changerHeaders);
 window.addEventListener('resize', changerHeaders);
 
-let menuMobile = document.getElementById('menu-mobile')
 
+let btnBurger = document.querySelector('.burger');
+let menu = document.getElementById('le-menu');
+let lignes = document.querySelectorAll('.ligne');
 let btnCours = document.getElementById('btn-cours');
 let btnProfs = document.getElementById('btn-profs');
 let btnProjets = document.getElementById('btn-projets');
 let btnStages = document.getElementById('btn-stages');
 
-btnBurger.addEventListener('click', gestionMenu);
-btnCours.addEventListener('click', fermerMenu);
+btnBurger.addEventListener('click', toggleMenu);
+btnCours.addEventListener('click', toggleMenu);
+btnProfs.addEventListener('click', toggleMenu);
+btnProjets.addEventListener('click', toggleMenu);
+btnStages.addEventListener('click', toggleMenu);
 
-/*function gestionMenu() {
-    let menuOuvert = false;
-    let leMenu = document.getElementById('le-menu');
-    if (menuOuvert === false) {
-        leMenu.style.transform = 'translateX(0vw)';
-        menuOuvert = true;
-    }
-    else if (menuOuvert === true) {
-        leMenu.style.transform = 'translateX(100vw)';
-        menuOuvert = false;
-    }
-}*/
-
-function fermerMenu() {
-    /*console.log("Click");
-    let leMenu = document.getElementById('le-menu');
-    leMenu.style.transform = 'translateX(100vw)';
-
-    menuMobile.checked = false;*/
-    document.getElementById('le-burger').checked = false;
+/*
+    Fonction qui permet d'ouvrir et de fermer le menu mobile lorqu'on clique sur le menu burger ou les liens à l'intérieur
+*/
+function toggleMenu() {
+    menu.classList.toggle('menu-ouvert');
+    btnBurger.classList.toggle('burger-ouvert');
+    lignes.forEach(
+        ligne => ligne.classList.toggle('ouvert')
+    );
 }

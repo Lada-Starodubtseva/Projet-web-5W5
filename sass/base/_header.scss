@@ -51,6 +51,19 @@ html {
                 height: 8%;
                 
             }
+
+            // permet de changer les lignes lorsque le menu est ouvert
+            .ouvert:nth-of-type(1) {
+                transform: rotate(-40deg) translate(0px, 3.5px);
+            }
+
+            .ouvert:nth-of-type(2) {
+                display: none;
+            }
+
+            .ouvert:nth-of-type(3) {
+                transform: rotate(40deg) translate(0px, -4px);
+            }
         }
 
         .burger:hover {
@@ -58,26 +71,10 @@ html {
             border: 1px solid #2274A5;
         }
 
-        // Quand le checkbox est cliqué, le contenant du menu apparaît
-        .menu-mobile:checked ~ .menu {
-            transform: translateX(0);
-        }
-
-        .menu-mobile:checked + .burger {
+        // ajustement du style lorsque le menu est ouvert
+        .burger-ouvert {
             padding: 0.5rem 0.6rem 0.5rem 0.4rem;
             justify-content: center;
-        }
-
-        .menu-mobile:checked + .burger > .ligne:nth-of-type(1) {
-            transform: rotate(-40deg) translate(0px, 3.5px);
-        }
-
-        .menu-mobile:checked + .burger > .ligne:nth-of-type(2) {
-            display: none;
-        }
-
-        .menu-mobile:checked  + .burger > .ligne:nth-of-type(3) {
-            transform: rotate(40deg) translate(0px, -4px);
         }
 
         // Contenant qui apparaît
@@ -115,8 +112,7 @@ html {
                     
                     a {
                         width: 100%;
-                        font-family: 'Martian Mono', monospace;
-                        //font-family: 'Work Sans', sans-serif;
+                        font-family: 'Work Sans', sans-serif;
                         font-weight: bold;
                         font-size: large;
                         padding: 2rem 0rem;
@@ -168,6 +164,11 @@ html {
                     }
                 }
             }
+        }
+
+        // classe lorsque le menu est ouvert
+        .menu-ouvert {
+            transform: translateX(0);
         }
     }
 
@@ -274,145 +275,3 @@ html {
         }
     }
 }
-
-/*
-html {
-    scroll-behavior: smooth;
-
-    body {
-        background-color: #030027;
-        margin: 0;
-        overflow-x: hidden;
-
-        header {
-            display: flex;
-            justify-content: space-between;
-
-            img {
-                width: 80px;
-                padding: 10px;
-            }
-
-            .menu:hover .nav-menu {
-                margin-left: 240px;
-            }
-
-            div.menu {
-                display: flex;
-                justify-content: space-between;
-                //margin: 2%;
-
-                nav.nav-menu {
-                    display: flex;
-
-                    ul {
-                        display: flex;
-
-                        li {
-                            list-style-type: none;
-                            color: #C4E7D4;
-                            font-family: Verdana, Geneva, Tahoma, sans-serif;
-                            font-size: 15px;
-                            overflow: hidden;
-                            position: relative;
-                            display: inline-block;
-                            padding: 10px;
-                            width: auto;
-
-                            span {
-                                display: inline-block;
-                                transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-                            }
-                        }
-
-                        li::before, li::after {
-                            content: '';
-                            position: absolute;
-                            width: 100%;
-                            left: 0;
-                        }
-
-                        li::before {
-                            background-color: #54b3d6;
-                            height: 2px;
-                            bottom: 0;
-                            transform-origin: 100% 50%;
-                            transform: scaleX(0);
-                            transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-                        }
-
-                        li::after {
-                            content: attr(data-replace);
-                            height: 100%;
-                            top: 0;
-                            transform-origin: 100% 50%;
-                            transform: translate3d(200%, 0, 0);
-                            transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-                            color: #54b3d6;
-                        }
-
-                        li:hover {
-                            text-decoration: underline;
-                            color: white;
-                        }
-
-                        li:hover::before {
-                            transform-origin: 0% 50%;
-                            transform: scaleX(1);
-                        }
-
-                        li:hover::after {
-                            transform: translate3d(0, 0, 0);
-                        }
-                    }
-                }
-
-                .searchBox {
-                    position: relative;
-                    background: #2f3640;
-                    height: 40px;
-                    border-radius: 40px;
-                    padding: 10px;
-                    flex-shrink: 0;
-                }
-
-                .searchBox:hover > .searchInput {
-                    width: 240px;
-                    padding: 0 6px;
-                }
-
-                .searchBox:hover > .searchButton {
-                    background: white;
-                    color: #2f3640;
-                }
-
-                .searchButton {
-                    color: white;
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 50%;
-                    background: #2f3640;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    transition: 0.4s;
-                    border: rgb(255, 254, 254) 4px solid;
-                }
-                
-                .searchInput {
-                    border: none;
-                    background: none;
-                    outline: none;
-                    float: left;
-                    padding: 0;
-                    color: white;
-                    font-size: 16px;
-                    transition: 0.4s;
-                    line-height: 40px;
-                    width: 0px;
-                }
-            }
-        }
-    }
-}
-*/
