@@ -29,10 +29,19 @@
                     <p class="lorem">Lorem ipsum dolor sit amet consectetur. </p>
                 </div>
             </main>
-
         </section>
 
+        <div class="degrade">
+            <div class="premier"></div>
+            <div class="deuxieme"></div>
+            <div class="troisieme"></div>
+            <div class="quatrieme"></div>
+            <div class="cinquieme"></div>
+        </div>
+
         <section class="description" id="description">
+            <h6>PROGRAMME</h6>
+            <h2>La technique</h2>
             <div id="background"></div>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id vitae sunt maxime nostrum esse. Aspernatur minus
                 qui laborum eveniet ratione alias tempore quaerat distinctio, incidunt ab porro debitis velit fugiat. Lorem
@@ -53,17 +62,9 @@
             get_template_part("templates-parts/enseignants");
         ?>
 
-        <?php get_template_part("templates-parts/projets"); ?>
- 
-        <section>
-            <div class="degrade">
-                <div class="premier"></div>
-                <div class="deuxieme"></div>
-                <div class="troisieme"></div>
-                <div class="quatrieme"></div>
-                <div class="cinquieme"></div>
-            </div>
-        </section>
+        <?php 
+            get_template_part("templates-parts/projets");
+        ?>
 
         <?php 
             get_template_part("templates-parts/futur");
