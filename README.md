@@ -35,11 +35,15 @@
 
 ## Sprint 4
 * Correction des problèmes de la fin du sprint 3
-* Continuation du développement des section
+  - Ajout du contenu dans la section Futur
+  - Correction du bug d'affichage dans la section Enseignants
+  - Modification du style dans la section Projets
+* Fin du développement des sections
   - Description
 * Mise à jour du design de l'accueil
-* Mise en place du deuxième menu en mode ordi
-#### Date de fin du sprint : xx/xx/2023
+* Mise en place du menu secondaire en mode ordi
+* Modification de la page index.php pour la recherche
+#### Date de fin du sprint : 20/12/2023
 
 ### Extension #1
 * Permet d'afficher les cours
