@@ -78,7 +78,7 @@ html {
         }
 
         // Contenant qui apparaît
-        .menu {
+        .le-menu {
             position: absolute;
             transform: translateX(100vw);
             top: 0vw;
@@ -90,7 +90,8 @@ html {
             transition: transform 0.3s;
 
             // Menu
-            .nav {
+            //.nav
+            .menu-accueil-container{
                 height: 100%;
                 padding: 0rem 2rem;
                 display: flex;
@@ -100,64 +101,67 @@ html {
                 background-color: #030027;
 
                 // Liste pour les différentes sections
-                ul {
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    list-style: none;
-                    padding-left: 0;
-                    margin: 6rem 0rem 0rem 0rem;
-                    
-                    a {
+                #menu-accueil {
+
+                    li {
                         width: 100%;
-                        font-family: 'Work Sans', sans-serif;
-                        font-weight: bold;
-                        font-size: large;
-                        padding: 2rem 0rem;
-                        text-align: center;
-                        color: #C4E7D4;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        list-style: none;
+                        padding-left: 0;
+                        margin: 6rem 0rem 0rem 0rem;
+                        
+                        a {
+                            width: 100%;
+                            font-family: 'Work Sans', sans-serif;
+                            font-weight: bold;
+                            font-size: 25px;
+                            padding: 2rem 0rem;
+                            text-align: center;
+                            color: #C4E7D4;
 
-                        text-decoration: none;
-                        cursor: pointer;
+                            text-decoration: none;
+                            cursor: pointer;
 
-                        transition: background-color 0.3s, color 0.3s;
-                    }
+                            transition: background-color 0.3s, color 0.3s;
+                        }
 
-                    a:hover {
-                        background-color: #2274A5;
-                        color: #030027;
+                        a:hover {
+                            background-color: #2274A5;
+                            color: #030027;
+                        }
                     }
                 }
+            }
 
-                // Boîte de recherche Wordpress
-                .searchBox-mobile {
-                    width: 50%;
+            // Boîte de recherche Wordpress
+            .searchBox-mobile {
+                margin: 0vw 1vw;
 
-                    div {
-                        
-                        form {
+                div {
+                    
+                    form {
 
-                            div {
+                        div {
 
-                                input {
-                                    font-family: 'Work Sans', sans-serif;
-                                    background-color: #C4E7D4;
+                            input {
+                                font-family: 'Work Sans', sans-serif;
+                                background-color: #C4E7D4;
+                                color: #030027;
+                                border: 1px solid #C4E7D4;
+                                border-radius: 2rem;
+                            }
+
+                            button {
+                                background-color: #C4E7D4;
+                                border: 1px solid #C4E7D4;
+                                border-radius: 3rem;
+                                padding: 0.5rem;
+
+                                svg {
                                     color: #030027;
-                                    border: 1px solid #C4E7D4;
-                                    border-radius: 2rem;
-                                }
-
-                                button {
-                                    background-color: #C4E7D4;
-                                    border: 1px solid #C4E7D4;
-                                    border-radius: 3rem;
-                                    padding: 0.5rem;
-
-                                    svg {
-                                        color: #030027;
-                                    }
                                 }
                             }
                         }
@@ -167,7 +171,7 @@ html {
         }
 
         // classe lorsque le menu est ouvert
-        .menu-ouvert {
+        .le-menu-ouvert {
             transform: translateX(0);
         }
     }

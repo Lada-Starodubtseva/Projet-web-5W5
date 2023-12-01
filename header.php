@@ -20,25 +20,23 @@
 <body class="site">
     <header class="site__header">
         <div id="header-mobile" class="header-mobile">
-            <img src="http://localhost:8080/5w5/wp-content/uploads/2023/11/TIM-Blanc.png" alt="logo">
-            <input class="menu-mobile" type="checkbox" id="menu-mobile">
+        <img src="http://localhost:8080/5w5/wp-content/uploads/2023/11/TIM-Blanc.png" alt="logo">    
+        <input class="menu-mobile" type="checkbox" id="menu-mobile">
             <label id="le-burger" class="burger" for="menu-mobile">
                 <span class="ligne"></span>
                 <span class="ligne"></span>
                 <span class="ligne"></span>
             </label>
-            <div id="le-menu" class="menu">
-                <nav class="nav">
-                    <ul>
-                        <a href="#cours" id="btn-cours">Cours</a>
-                        <a href="#enseignants" id="btn-profs">Enseignants</a>
-                        <a id="btn-projets">Projets</a>
-                        <a id="btn-stages">Stages</a>
-                    </ul>
+            <div id="le-menu" class="le-menu">
+                <div class="centrer-menu">
+                    <?php wp_nav_menu(array(
+                        "menu" => "accueil",
+                        "container" => "nav"
+                    )) ?>
                     <div class="searchBox-mobile">
                         <?php dynamic_sidebar( 'header-recherche' ); ?>
                     </div>
-                </nav>
+                </div>
             </div>
         </div>
         <div id="header-ordi" class="header-ordi">
@@ -58,3 +56,26 @@
             </div>
         </div>
     </header>
+
+<!--
+    <img src="http://localhost:8080/5w5/wp-content/uploads/2023/11/TIM-Blanc.png" alt="logo">
+            <input class="menu-mobile" type="checkbox" id="menu-mobile">
+            <label id="le-burger" class="burger" for="menu-mobile">
+                <span class="ligne"></span>
+                <span class="ligne"></span>
+                <span class="ligne"></span>
+            </label>
+            <div id="le-menu" class="menu">
+                <nav class="nav">
+                    <ul>
+                        <a href="http://localhost:8080/5w5/front-page.php" id="btn-cours">Cours</a>
+                        <a href="#enseignants" id="btn-profs">Enseignants</a>
+                        <a id="btn-projets">Projets</a>
+                        <a id="btn-stages">Stages</a>
+                    </ul>
+                    <div class="searchBox-mobile">
+                    <dynamic_sidebar( 'header-recherche' ); ?>
+                    </div>
+                </nav>
+            </div>
+-->

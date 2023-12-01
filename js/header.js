@@ -20,9 +20,10 @@ window.addEventListener('resize', changerHeaders);
 
 
 let btnBurger = document.querySelector('.burger');
-let menu = document.getElementById('le-menu');
+//let menu = document.getElementById('le-menu');
+let menu = document.querySelector('.le-menu');
 let lignes = document.querySelectorAll('.ligne');
-let btnCours = document.getElementById('btn-cours');
+let btnCours = document.getElementById('menu-item-271');
 let btnProfs = document.getElementById('btn-profs');
 let btnProjets = document.getElementById('btn-projets');
 let btnStages = document.getElementById('btn-stages');
@@ -37,7 +38,7 @@ btnStages.addEventListener('click', toggleMenu);
     Fonction qui permet d'ouvrir et de fermer le menu mobile lorqu'on clique sur le menu burger ou les liens à l'intérieur
 */
 function toggleMenu() {
-    menu.classList.toggle('menu-ouvert');
+    menu.classList.toggle('le-menu-ouvert');
     btnBurger.classList.toggle('burger-ouvert');
     lignes.forEach(
         ligne => ligne.classList.toggle('ouvert')
