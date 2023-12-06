@@ -5,7 +5,6 @@ html {
     /* ---------------------------------------------- Menu Mobile --------- */
 
     .header-mobile {
-        width: 100vw;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -86,82 +85,90 @@ html {
             z-index: 5;
             width: 100vw;
             height: 100vh;
+            overflow: hidden;
 
             transition: transform 0.3s;
 
             // Menu
-            //.nav
-            .menu-accueil-container{
-                height: 100%;
-                padding: 0rem 2rem;
+            .centrer-menu {
                 display: flex;
-                justify-content: space-evenly;
-                align-items: center;
+                justify-content: center;
                 flex-direction: column;
+                row-gap: 2rem;
                 background-color: #030027;
+                padding: 0rem 2rem;
+                margin: 0rem 0rem 1rem 0rem;
+                height: inherit;
+            
+                .menu-accueil-container{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    flex-direction: column;
 
-                // Liste pour les différentes sections
-                #menu-accueil {
+                    // Liste pour les différentes sections
+                    ul {
+                        padding: 0;
+                        margin: 0;
 
-                    li {
-                        width: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        list-style: none;
-                        padding-left: 0;
-                        margin: 6rem 0rem 0rem 0rem;
-                        
-                        a {
+                        li {
                             width: 100%;
-                            font-family: 'Work Sans', sans-serif;
-                            font-weight: bold;
-                            font-size: 25px;
-                            padding: 2rem 0rem;
-                            text-align: center;
-                            color: #C4E7D4;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            list-style: none;
+                            padding: 1rem 0rem;
+                            
+                            a {
+                                font-family: 'Work Sans', sans-serif;
+                                font-weight: bold;
+                                font-size: 25px;
+                                padding: 1rem 1rem;
+                                text-align: center;
+                                color: #C4E7D4;
 
-                            text-decoration: none;
-                            cursor: pointer;
+                                text-decoration: none;
+                                cursor: pointer;
 
-                            transition: background-color 0.3s, color 0.3s;
-                        }
+                                transition: background-color 0.3s, color 0.3s;
+                            }
 
-                        a:hover {
-                            background-color: #2274A5;
-                            color: #030027;
+                            a:hover {
+                                background-color: #2274A5;
+                                color: #030027;
+                            }
                         }
                     }
                 }
-            }
 
-            // Boîte de recherche Wordpress
-            .searchBox-mobile {
-                margin: 0vw 1vw;
+                // Boîte de recherche Wordpress
+                .searchBox-mobile {
+                    margin: 0vw 1vw;
 
-                div {
-                    
-                    form {
+                    div {
+                        
+                        form {
 
-                        div {
+                            div {
 
-                            input {
-                                font-family: 'Work Sans', sans-serif;
-                                background-color: #C4E7D4;
-                                color: #030027;
-                                border: 1px solid #C4E7D4;
-                                border-radius: 2rem;
-                            }
-
-                            button {
-                                background-color: #C4E7D4;
-                                border: 1px solid #C4E7D4;
-                                border-radius: 3rem;
-                                padding: 0.5rem;
-
-                                svg {
+                                input {
+                                    font-family: 'Work Sans', sans-serif;
+                                    background-color: #C4E7D4;
                                     color: #030027;
+                                    border: 1px solid #C4E7D4;
+                                    border-radius: 2rem;
+                                }
+
+                                button {
+                                    background-color: #C4E7D4;
+                                    border: 1px solid #C4E7D4;
+                                    border-radius: 3rem;
+                                    padding: 0.5rem;
+
+                                    svg {
+                                        color: #030027;
+                                    }
                                 }
                             }
                         }
@@ -179,12 +186,11 @@ html {
     /* ---------------------------------------------- Menu Ordi --------- */
 
     .header-ordi {
-        width: 100vw;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+        padding: 1rem 2rem;
 
         img {
             width: 5rem;

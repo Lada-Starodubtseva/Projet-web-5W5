@@ -46,8 +46,8 @@
                     <ul>
                         <a href="#cours">Cours</a>
                         <a href="#enseignants">Enseignant</a>
-                        <a>Projets</a>
-                        <a>Stages</a>
+                        <a href="#projets">Projets</a>
+                        <a href="#futur">Stages</a>
                     </ul>
                 </nav>
                 <div class="searchBox-ordi">
