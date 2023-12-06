@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
     <?php wp_head(); ?>
-    <title>Document</title>
+    <title>TIM</title>
 </head>
 <body class="site">
     <header class="site__header">
