@@ -42,14 +42,10 @@
         <div id="header-ordi" class="header-ordi">
             <img src="http://localhost:8080/5w5/wp-content/uploads/2023/11/TIM-Blanc.png" alt="logo">
             <div class="menu">
-                <nav class="nav">
-                    <ul>
-                        <a href="#cours">Cours</a>
-                        <a href="#enseignants">Enseignant</a>
-                        <a href="#projets">Projets</a>
-                        <a href="#futur">Stages</a>
-                    </ul>
-                </nav>
+                <?php wp_nav_menu(array(
+                    "menu" => "accueil",
+                    "container" => "nav"
+                )) ?>
                 <div class="searchBox-ordi">
                     <?php dynamic_sidebar( 'header-recherche' ); ?>
                 </div>

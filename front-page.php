@@ -4,7 +4,7 @@
 
     <body>
 
-        <section class="accueil">
+        <section id="accueil" class="accueil">
 
             <main>
 
