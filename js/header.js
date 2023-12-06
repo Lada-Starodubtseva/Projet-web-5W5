@@ -20,13 +20,12 @@ window.addEventListener('resize', changerHeaders);
 
 
 let btnBurger = document.querySelector('.burger');
-//let menu = document.getElementById('le-menu');
 let menu = document.querySelector('.le-menu');
 let lignes = document.querySelectorAll('.ligne');
 let btnCours = document.getElementById('menu-item-271');
-let btnProfs = document.getElementById('btn-profs');
-let btnProjets = document.getElementById('btn-projets');
-let btnStages = document.getElementById('btn-stages');
+let btnProfs = document.getElementById('menu-item-272');
+let btnProjets = document.getElementById('menu-item-273');
+let btnStages = document.getElementById('menu-item-274');
 
 btnBurger.addEventListener('click', toggleMenu);
 btnCours.addEventListener('click', toggleMenu);
