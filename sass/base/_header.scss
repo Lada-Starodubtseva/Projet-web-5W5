@@ -40,8 +40,9 @@ html {
                 border: 1px solid #C4E7D4;
                 border-radius: 1.5rem;
                 padding: 0.5rem;
+                transform: scale(1);
 
-                transition: background-color 0.3s, color 0.3s;
+                transition: background-color 0.3s, color 0.3s, transform 0.3s;
 
                 // Ligne du menu burger
                 .ligne {
@@ -70,6 +71,7 @@ html {
             .burger:hover {
                 background-color: #2274A5;
                 border: 1px solid #2274A5;
+                transform: scale(1.1);
             }
 
             // ajustement du style lorsque le menu est ouvert
@@ -126,19 +128,24 @@ html {
                                     font-family: 'Work Sans', sans-serif;
                                     font-weight: bold;
                                     font-size: 25px;
-                                    padding: 1rem 1rem;
+                                    padding: 0.5rem 1rem;
                                     text-align: center;
                                     color: #C4E7D4;
-
+                                    border: 1px solid #030027;
+                                    border-radius: 2rem;
+                                    transform: scale(1);
                                     text-decoration: none;
                                     cursor: pointer;
 
-                                    transition: background-color 0.3s, color 0.3s;
+                                    transition: background-color 0.3s, color 0.3s, border 0.3s, transform 0.3s;
                                 }
 
                                 a:hover {
                                     background-color: #2274A5;
+                                    border: 1px solid #2274A5;
+                                    border-radius: 2rem;
                                     color: #030027;
+                                    transform: scale(1.1);
                                 }
                             }
                         }
@@ -167,10 +174,19 @@ html {
                                         border: 1px solid #C4E7D4;
                                         border-radius: 3rem;
                                         padding: 0.5rem;
+                                        transform: scale(1);
+
+                                        transition: transform 0.3s, background-color 0.3s, border 0.3s;
 
                                         svg {
                                             color: #030027;
                                         }
+                                    }
+
+                                    button:hover {
+                                        background-color: #2274A5;
+                                        border: 1px solid #2274A5;
+                                        transform: scale(1.1);
                                     }
                                 }
                             }
@@ -267,6 +283,9 @@ html {
                                     border: 1px solid #C4E7D4;
                                     border-radius: 3rem;
                                     padding: 0.5rem;
+                                    transform: scale(1);
+
+                                    transition: transform 0.3s, background-color 0.3s, border 0.3s;
 
                                     svg {
                                         color: #030027;
@@ -276,10 +295,7 @@ html {
                                 button:hover {
                                     background-color: #2274A5;
                                     border: 1px solid #2274A5;
-
-                                    svg {
-                                        color: #C4E7D4;
-                                    }
+                                    transform: scale(1.1);
                                 }
                             }
                         }
