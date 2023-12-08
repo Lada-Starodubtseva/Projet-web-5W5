@@ -15,7 +15,8 @@
         </div>
         <div class="inscription">
             <h3>S'inscrire</h3>
-            <p>Inscription</p>
+            <p>Commencez dès aujourd'hui<br> votre parcours au TIM!</p>
+            <button><a target="_blank" href="https://www.cmaisonneuve.qc.ca/programmes-admission/admission/depose-ta-demande-dadmission/">Soumettre</a></button>
         </div>
         <div class="recherche">
             <?php dynamic_sidebar( 'recherche' ); ?>
@@ -23,7 +24,7 @@
         <div class="medias">
             <h3>Nous suivre</h3>
             <div class="icones">
-                <span class="facebook"><a target="_blank" href="https://www.facebook.com/CollegeMaisonneuve"><img src="https://s2.svgbox.net/social.svg?color=c4e7d4&ic=facebook" alt="Facebook"></a></span>
+                <span class="facebook"><a target="_blank" href="https://www.facebook.com/CollegeMaisonneuve"><img src="http://localhost:8080/5w5/wp-content/uploads/2023/12/facebook.png" alt="Facebook"></a></span>
                 <span class="instagram"><a target="_blank" href="https://www.instagram.com/collegemaisonneuve/"><img src="https://s2.svgbox.net/social.svg?ic=instagram" alt="Instagram"></a></span>
                 <span class="linkedin"><a target="_blank" href="https://www.linkedin.com/school/collegedemaisonneuve/"><img src="https://s2.svgbox.net/social.svg?ic=linkedin" alt=""></a></span>
             </div>

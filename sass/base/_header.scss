@@ -3,151 +3,253 @@ html {
     overflow-x: hidden;
 
     /* ---------------------------------------------- Menu Mobile --------- */
+    .site__header {
+        max-width: 100vw;
 
-    .header-mobile {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 1.5rem 1rem 1rem;
-
-        // Logo du TIM
-        img {
-            width: 3rem;
-            height: auto;
-        }
-
-        // Checkbox pour le menu
-        #menu-mobile {
-            display: none;
-        }
-
-        // Conteneur pour menu burger
-        .burger {
+        .header-mobile {
             display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: space-between;
             align-items: center;
-            text-align: center;
-            row-gap: 0.2rem;
-            z-index: 10;
+            padding: 1rem 1.5rem 1rem 1rem;
 
-            cursor: pointer;
-            width: 1.2rem;
-            height: 1.2rem;
-            background-color: #C4E7D4;
-            border: 1px solid #C4E7D4;
-            border-radius: 1.5rem;
-            padding: 0.5rem;
-
-            transition: background-color 0.3s, color 0.3s;
-
-            // Ligne du menu burger
-            .ligne {
-                background-color: #030027;
-                border: 1px solid #030027;
-                border-radius: 30%;
-                width: 100%;
-                height: 8%;
-                
+            // Logo du TIM
+            img {
+                width: 3rem;
+                height: auto;
             }
 
-            // permet de changer les lignes lorsque le menu est ouvert
-            .ouvert:nth-of-type(1) {
-                transform: rotate(-40deg) translate(0px, 3.5px);
-            }
-
-            .ouvert:nth-of-type(2) {
+            // Checkbox pour le menu
+            #menu-mobile {
                 display: none;
             }
 
-            .ouvert:nth-of-type(3) {
-                transform: rotate(40deg) translate(0px, -4px);
-            }
-        }
-
-        .burger:hover {
-            background-color: #2274A5;
-            border: 1px solid #2274A5;
-        }
-
-        // ajustement du style lorsque le menu est ouvert
-        .burger-ouvert {
-            padding: 0.5rem 0.6rem 0.5rem 0.4rem;
-            justify-content: center;
-        }
-
-        // Contenant qui apparaît
-        .le-menu {
-            position: absolute;
-            transform: translateX(100vw);
-            top: 0vw;
-            left: 0vw;
-            z-index: 5;
-            width: 100vw;
-            height: 100vh;
-            overflow: hidden;
-
-            transition: transform 0.3s;
-
-            // Menu
-            .centrer-menu {
+            // Conteneur pour menu burger
+            .burger {
                 display: flex;
-                justify-content: center;
                 flex-direction: column;
-                row-gap: 2rem;
-                background-color: #030027;
-                padding: 0rem 2rem;
-                margin: 0rem 0rem 1rem 0rem;
-                height: inherit;
-            
-                .menu-accueil-container{
+                justify-content: space-evenly;
+                align-items: center;
+                text-align: center;
+                row-gap: 0.2rem;
+                z-index: 10;
+
+                cursor: pointer;
+                width: 1.2rem;
+                height: 1.2rem;
+                background-color: #C4E7D4;
+                border: 1px solid #C4E7D4;
+                border-radius: 1.5rem;
+                padding: 0.5rem;
+
+                transition: background-color 0.3s, color 0.3s;
+
+                // Ligne du menu burger
+                .ligne {
+                    background-color: #030027;
+                    border: 1px solid #030027;
+                    border-radius: 30%;
+                    width: 100%;
+                    height: 8%;
+                    
+                }
+
+                // permet de changer les lignes lorsque le menu est ouvert
+                .ouvert:nth-of-type(1) {
+                    transform: rotate(-40deg) translate(0px, 3.5px);
+                }
+
+                .ouvert:nth-of-type(2) {
+                    display: none;
+                }
+
+                .ouvert:nth-of-type(3) {
+                    transform: rotate(40deg) translate(0px, -4px);
+                }
+            }
+
+            .burger:hover {
+                background-color: #2274A5;
+                border: 1px solid #2274A5;
+            }
+
+            // ajustement du style lorsque le menu est ouvert
+            .burger-ouvert {
+                padding: 0.5rem 0.6rem 0.5rem 0.4rem;
+                justify-content: center;
+            }
+
+            // Contenant qui apparaît
+            .le-menu {
+                position: absolute;
+                transform: translateX(100vw);
+                top: 0vw;
+                left: 0vw;
+                z-index: 5;
+                width: 100vw;
+                height: 100vh;
+                overflow: hidden;
+
+                transition: transform 0.3s;
+
+                // Menu
+                .centrer-menu {
                     display: flex;
-                    justify-content: space-evenly;
-                    align-items: center;
+                    justify-content: center;
                     flex-direction: column;
+                    row-gap: 2rem;
+                    background-color: #030027;
+                    padding: 0rem 2rem;
+                    margin: 0rem 0rem 1rem 0rem;
+                    height: inherit;
+                
+                    .menu-accueil-container{
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        flex-direction: column;
 
-                    // Liste pour les différentes sections
-                    ul {
-                        padding: 0;
-                        margin: 0;
+                        // Liste pour les différentes sections
+                        ul {
+                            padding: 0;
+                            margin: 0;
 
-                        li {
-                            width: 100%;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            align-items: center;
-                            list-style: none;
-                            padding: 1rem 0rem;
-                            
-                            a {
-                                font-family: 'Work Sans', sans-serif;
-                                font-weight: bold;
-                                font-size: 25px;
-                                padding: 1rem 1rem;
-                                text-align: center;
-                                color: #C4E7D4;
+                            li {
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                list-style: none;
+                                padding: 1rem 0rem;
+                                
+                                a {
+                                    font-family: 'Work Sans', sans-serif;
+                                    font-weight: bold;
+                                    font-size: 25px;
+                                    padding: 1rem 1rem;
+                                    text-align: center;
+                                    color: #C4E7D4;
 
-                                text-decoration: none;
-                                cursor: pointer;
+                                    text-decoration: none;
+                                    cursor: pointer;
 
-                                transition: background-color 0.3s, color 0.3s;
+                                    transition: background-color 0.3s, color 0.3s;
+                                }
+
+                                a:hover {
+                                    background-color: #2274A5;
+                                    color: #030027;
+                                }
                             }
+                        }
+                    }
 
-                            a:hover {
-                                background-color: #2274A5;
-                                color: #030027;
+                    // Boîte de recherche Wordpress
+                    .searchBox-mobile {
+                        margin: 0vw 1vw;
+
+                        div {
+                            
+                            form {
+
+                                div {
+
+                                    input {
+                                        font-family: 'Work Sans', sans-serif;
+                                        background-color: #C4E7D4;
+                                        color: #030027;
+                                        border: 1px solid #C4E7D4;
+                                        border-radius: 2rem;
+                                    }
+
+                                    button {
+                                        background-color: #C4E7D4;
+                                        border: 1px solid #C4E7D4;
+                                        border-radius: 3rem;
+                                        padding: 0.5rem;
+
+                                        svg {
+                                            color: #030027;
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
                 }
+            }
 
-                // Boîte de recherche Wordpress
-                .searchBox-mobile {
-                    margin: 0vw 1vw;
+            // classe lorsque le menu est ouvert
+            .le-menu-ouvert {
+                transform: translateX(0);
+            }
+        }
+
+        /* ---------------------------------------------- Menu Ordi --------- */
+
+        .header-ordi {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+
+            img {
+                width: 5rem;
+                height: auto;
+            }
+
+            .menu {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                column-gap: 1rem;
+
+                nav {
+                    
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        column-gap: 1rem;
+                        padding: 0rem 0.5rem;
+                        list-style: none;
+
+                        a {
+                            cursor: pointer;
+                            font-family: 'Work Sans', sans-serif;
+                            font-weight: bold;
+                            color: #C4E7D4;
+                            text-decoration: none;
+                            position: relative;
+                            padding-bottom: 0.5rem;
+                        }
+
+                        a::after {
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 5px;
+                            background-color: #2274A5;
+                            transform-origin: bottom right;
+                            transform: scaleX(0);
+                            transition: transform 0.25s ease-out;
+                        }
+
+                        a:hover::after {
+                            transform: scaleX(1);
+                            transform-origin: bottom left;
+                        }
+                    }
+                }
+
+                .searchBox-ordi {
 
                     div {
-                        
+                            
                         form {
 
                             div {
@@ -170,113 +272,14 @@ html {
                                         color: #030027;
                                     }
                                 }
-                            }
-                        }
-                    }
-                }
-            }
-        }
 
-        // classe lorsque le menu est ouvert
-        .le-menu-ouvert {
-            transform: translateX(0);
-        }
-    }
+                                button:hover {
+                                    background-color: #2274A5;
+                                    border: 1px solid #2274A5;
 
-    /* ---------------------------------------------- Menu Ordi --------- */
-
-    .header-ordi {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 2rem;
-
-        img {
-            width: 5rem;
-            height: auto;
-        }
-
-        .menu {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            column-gap: 1rem;
-
-            nav {
-                
-                ul {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-                    column-gap: 1rem;
-                    padding: 0rem 0.5rem;
-                    list-style: none;
-
-                    a {
-                        cursor: pointer;
-                        font-family: 'Work Sans', sans-serif;
-                        font-weight: bold;
-                        color: #C4E7D4;
-                        text-decoration: none;
-                        position: relative;
-                        padding-bottom: 0.5rem;
-                    }
-
-                    a::after {
-                        content: '';
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 5px;
-                        background-color: #2274A5;
-                        transform-origin: bottom right;
-                        transform: scaleX(0);
-                        transition: transform 0.25s ease-out;
-                    }
-
-                    a:hover::after {
-                        transform: scaleX(1);
-                        transform-origin: bottom left;
-                    }
-                }
-            }
-
-            .searchBox-ordi {
-
-                div {
-                        
-                    form {
-
-                        div {
-
-                            input {
-                                font-family: 'Work Sans', sans-serif;
-                                background-color: #C4E7D4;
-                                color: #030027;
-                                border: 1px solid #C4E7D4;
-                                border-radius: 2rem;
-                            }
-
-                            button {
-                                background-color: #C4E7D4;
-                                border: 1px solid #C4E7D4;
-                                border-radius: 3rem;
-                                padding: 0.5rem;
-
-                                svg {
-                                    color: #030027;
-                                }
-                            }
-
-                            button:hover {
-                                background-color: #2274A5;
-                                border: 1px solid #2274A5;
-
-                                svg {
-                                    color: #C4E7D4;
+                                    svg {
+                                        color: #C4E7D4;
+                                    }
                                 }
                             }
                         }
