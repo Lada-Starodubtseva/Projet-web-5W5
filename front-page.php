@@ -3,41 +3,39 @@
 <main>
 
     <body>
-
         <section id="accueil" class="accueil">
-
-            <main>
-
-                <div class="main-accueil">
-
-                    <div class="texte-arrow">
-                        <div class="titre">
-
-                            <p> Techniques </p>
-                            <p> Integration </p>
-                            <p> Multimédia </p>
-
-                        </div>
-                        <div class="arrow"><a href="#description">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </a>
-                        </div>
+            <div class="main-accueil">
+                <div class="texte-arrow">
+                    <div class="titre">
+                        <p> Techniques </p>
+                        <p> Intégration </p>
+                        <p> Multimédia </p>
                     </div>
-
-                    <p class="lorem">Lorem ipsum dolor sit amet consectetur. </p>
+                    <div class="arrow">
+                        <a href="#description">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
                 </div>
-            </main>
+                <p class="lorem">Lorem ipsum dolor sit amet consectetur. </p>
+            </div>
+            <div class="degrade">
+                <div class="premier"></div>
+                <div class="deuxieme"></div>
+                <div class="troisieme"></div>
+                <div class="quatrieme"></div>
+                <div class="cinquieme"></div>
+            </div>
         </section>
 
-        <div class="degrade">
-            <div class="premier"></div>
-            <div class="deuxieme"></div>
-            <div class="troisieme"></div>
-            <div class="quatrieme"></div>
-            <div class="cinquieme"></div>
-        </div>
+        <section class="menu-secondaire">
+            <?php wp_nav_menu(array(
+                "menu" => "secondaire",
+                "container" => "nav"
+            )) ?>
+        </section>
 
         <section class="description" id="description">
             <h6>PROGRAMME</h6>
