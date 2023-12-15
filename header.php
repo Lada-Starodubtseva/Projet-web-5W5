@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -21,23 +19,42 @@
 </head>
 <body class="site">
     <header class="site__header">
-<img src="Medias/_LogoTIM_carre.png" alt="logo">
-        <div class="menu">
-            <nav class="nav-menu">
-                <ul>
-                    <li class="Cours"><span>Cours</span></li>
-                    <li class="Enseignant"><span>Enseignant</span></li>
-                    <li class="Projets"><span>Projets</span></li>
-                    <li class="Stages"><span>Stages</span></li>
-                </ul>
-            </nav>
-            <div class="searchBox">
-                <input class="searchInput" type="text" name="" placeholder="Rechercher...">
-                <button class="searchButton" href="#">
-                    <i class="material-icons">
-                        search
-                    </i>
-                </button>
+        <div id="header-mobile" class="header-mobile">
+            <img src="http://localhost:8080/5w5/wp-content/uploads/2023/11/TIM-Blanc.png" alt="logo">
+            <input class="menu-mobile" type="checkbox" id="menu-mobile">
+            <label id="le-burger" class="burger" for="menu-mobile">
+                <span class="ligne"></span>
+                <span class="ligne"></span>
+                <span class="ligne"></span>
+            </label>
+            <div id="le-menu" class="menu">
+                <nav class="nav">
+                    <ul>
+                        <a href="#cours" id="btn-cours">Cours</a>
+                        <a href="#enseignants" id="btn-profs">Enseignants</a>
+                        <a id="btn-projets">Projets</a>
+                        <a id="btn-stages">Stages</a>
+                    </ul>
+                    <div class="searchBox-mobile">
+                        <?php dynamic_sidebar( 'header-recherche' ); ?>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div id="header-ordi" class="header-ordi">
+            <img src="http://localhost:8080/5w5/wp-content/uploads/2023/11/TIM-Blanc.png" alt="logo">
+            <div class="menu">
+                <nav class="nav">
+                    <ul>
+                        <a href="#cours">Cours</a>
+                        <a href="#enseignants">Enseignant</a>
+                        <a>Projets</a>
+                        <a>Stages</a>
+                    </ul>
+                </nav>
+                <div class="searchBox-ordi">
+                    <?php dynamic_sidebar( 'header-recherche' ); ?>
+                </div>
             </div>
         </div>
     </header>
