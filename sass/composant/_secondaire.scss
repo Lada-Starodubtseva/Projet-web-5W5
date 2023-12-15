@@ -1,0 +1,37 @@
+.menu-secondaire {
+    position: fixed;
+    bottom: 1rem;
+    right: 1.5rem;
+
+    nav {
+
+        ul {
+            list-style: none;
+            
+            li {
+
+                a {
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    span {
+                        color: #030027;
+                        background-color: #C4E7D4;
+                        border-radius: 2rem;
+                        padding: 0.5rem;
+                        transform: scale(1);
+
+                        transition: background-color 0.3s, transform 0.3s;
+                    }
+
+                    span:hover {
+                        background-color: #2274A5;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
