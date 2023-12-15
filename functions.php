@@ -20,6 +20,7 @@ function enregistrement_nav_menu(){
     register_nav_menus( array(
         'principal' => 'Menu principal',
         'cours' => 'Cours',
+        'secondaire' => 'Secondaire',
         'footer'  => 'Menu pied de page'
     ) );
 }
