@@ -42,6 +42,13 @@
             <div class="deuxieme"></div>
             <div class="premier"></div>
         </div>
+
+	<section class="menu-secondaire">
+            <?php wp_nav_menu(array(
+                "menu" => "secondaire",
+                "container" => "nav"
+            )) ?>
+        </section>
         
              <section class="description" id="presentation_programme">
 
