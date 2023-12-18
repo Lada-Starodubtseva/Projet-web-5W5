@@ -1,6 +1,6 @@
 
 <?php get_header(); ?>
-<main>
+<main >
 
     <body>
         <section id="accueil" class="accueil">
@@ -11,15 +11,7 @@
                         <p> Intégration </p>
                         <p> Multimédia </p>
                     </div>
-                    <div class="arrow">
-                        <a href="#description">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </a>
-                    </div>
                 </div>
-                <p class="lorem">Lorem ipsum dolor sit amet consectetur. </p>
             </div>
             <div class="degrade">
                 <div class="premier"></div>
