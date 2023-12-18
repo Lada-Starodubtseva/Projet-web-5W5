@@ -93,8 +93,7 @@ html {
                 height: 100vh;
                 overflow: hidden;
 
-                //transition: transform 0.3s;
-                transition: right 0.3s, top 0.3s;
+                transition: right 0.3s, top 0.3s, display 0.3s;
 
                 // Menu
                 .centrer-menu {
@@ -106,7 +105,7 @@ html {
                     padding: 0rem 2rem;
                     margin: 0rem 0rem 1rem 0rem;
                     height: inherit;
-                
+             
                     .menu-accueil-container {
                         display: flex;
                         justify-content: space-evenly;
