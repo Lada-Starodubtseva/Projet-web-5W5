@@ -18,7 +18,7 @@ add_action('wp_enqueue_scripts', 'ajouter_header_js');
 /* ----------------------------------- Enregistrement des menus */
 function enregistrement_nav_menu(){
     register_nav_menus( array(
-        'principal' => 'Menu principal',
+        'accueil' => 'Menu principal',
         'cours' => 'Cours',
         'secondaire' => 'Secondaire',
         'footer'  => 'Menu pied de page'
