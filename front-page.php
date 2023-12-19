@@ -6,7 +6,13 @@
         <section class="accueil">
 
             <main>
-
+		<img></img>
+		<img></img>
+		<img></img>
+		<img></img>
+		<img></img>
+		<img></img>
+		    
                 <div class="main-accueil">
 
                     <div class="texte-arrow">
