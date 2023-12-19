@@ -7,7 +7,12 @@
         <section class="accueil">
 
             <main>
-
+<img src=""></img>
+		<img  src=""></img>
+		<img src=""></img>
+		<img src=""></img>
+		<img src=""></img>
+		<img src=""></img>
                 <div class="main-accueil">
 
                     <div class="texte-arrow">
