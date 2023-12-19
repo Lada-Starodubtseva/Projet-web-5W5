@@ -85,8 +85,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -380,7 +379,6 @@ div.main-accueil {
 
 div.texte-arrow {
   display: flex;
-  width: -moz-fit-content;
   width: fit-content;
   justify-content: space-between;
   flex-wrap: nowrap;
@@ -847,16 +845,14 @@ html .site__header .header-ordi .menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
+  column-gap: 1rem;
 }
 html .site__header .header-ordi .menu nav ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
+  column-gap: 1rem;
   padding: 0rem 0.5rem;
   list-style: none;
 }
@@ -1024,8 +1020,17 @@ p {
   font-size: clamp(1rem, -0.3rem + 3vw, 4rem);
 }
 
-@media screen and (min-width: 768px) {
-  .cours {
+.futur_titre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.futur_titre h2 {
+  font-size: clamp(1rem, -0.3rem + 3vw, 4rem);
+}
+
+@media screen and (max-width: 768px) {
+  .futur_titre {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1141,7 +1146,6 @@ p {
   border: 1px solid #C4E7D4;
   border-radius: 2rem;
   padding: 0.4rem;
-  max-width: -moz-fit-content;
   max-width: fit-content;
 }
 .site__footer .infos .recherche #block-9 form .wp-block-search__inside-wrapper input {
@@ -1176,8 +1180,7 @@ p {
 .site__footer .infos .medias .icones {
   display: flex;
   justify-content: center;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
+  column-gap: 1rem;
 }
 .site__footer .infos .medias .icones .facebook img {
   width: 30px;
@@ -1213,8 +1216,7 @@ p {
   .site__footer .infos {
     display: flex;
     flex-direction: row;
-    -moz-column-gap: 2.5rem;
-         column-gap: 2.5rem;
+    column-gap: 2.5rem;
     align-items: baseline;
   }
   .site__footer .infos .adresse, .site__footer .infos .inscription {
