@@ -22,17 +22,27 @@ Text Domain: 2023-5w4
 @import "base/body";
 @import "base/header";
 @import "base/heading";
+<<<<<<< Updated upstream
 @import "base/accueil";
+=======
+@import "base/index";
+>>>>>>> Stashed changes
 
 /* ----------------------------------------------- template-parts */
 @import "template-parts/enseignants";
 @import "template-parts/cours";
 @import "template-parts/futur";
 
+
 /* --------------------------------------------- composant */
 @import "composant/footer";
+<<<<<<< Updated upstream
 @import "composant/description"; 
 @import "composant/secondaire";
+=======
+@import "composant/description";
+ 
+>>>>>>> Stashed changes
 
 
 

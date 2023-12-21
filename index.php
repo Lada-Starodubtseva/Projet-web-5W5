@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main>
-    <h3>index.php</h3>
+    <h3 class= "index-title">Résultat de votre recherche...</h3>
     <?php
     if (have_posts()): 
         while (have_posts()) : the_post();

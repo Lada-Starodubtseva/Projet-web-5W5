@@ -1,0 +1,47 @@
+// Existing styles for .index-title
+.index-title {
+    color:  #C4E7D4;
+    padding-left: 5%;
+}
+
+// New styles for the content in index.php
+main {
+    padding: 20px;
+    background-color: #030027; // To match the site's theme
+    
+
+    h1 {
+        font-family: 'Martian Mono', monospace;
+        margin-bottom: 20px;
+        color: #C4E7D4; // For contrast against the background
+    }
+
+    p {
+        font-family: 'Work Sans', sans-serif;
+        line-height: 1.6;
+    }
+
+    hr {
+        border-color: #C4E7D4;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 20px;
+
+         h1 {
+        font-family: 'Martian Mono', monospace;
+        margin-bottom: 20px;
+        color: #C4E7D4; // For contrast against the background
+    }
+    
+    }
+    .index-title {
+        color:  #C4E7D4;
+        padding-left: 5%;
+        font-size: 2rem;
+    }
+}
